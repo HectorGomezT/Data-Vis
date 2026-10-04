@@ -21,7 +21,7 @@ Compáralo con el pie de 23 porciones del ❌.
 - **Sí:** 2–3 categorías, una domina, y el mensaje es "parte de un todo".
 - **No:** más de 3–4 porciones, o comparar porciones parecidas.
 - **El truco:** lo que no importa se agrupa en "Otros".
-- **Alternativas:** barras ordenadas, barra apilada al 100%, waffle, o un número grande.
+- **Alternativas:** bar chart ordenado, stacked bar chart al 100%, waffle chart, o un número grande.
 - Lo mismo con el **spider/radar**: si no está clarísimo qué compara, no lo fuerces.
 """)
 

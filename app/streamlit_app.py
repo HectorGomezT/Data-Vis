@@ -16,7 +16,7 @@ pages = {
     "Las 9 entradas": [st.Page(i.page, title=f"{i.num}.ª · {i.label}", icon=ball) for i in INNINGS if int(i.num) <= 9],
     "Post-partido": [
         st.Page("views/post_cronica.py", title="La crónica", icon=":material/auto_stories:"),
-        st.Page("views/post_marcador.py", title="El marcador (dashboard)", icon=":material/dashboard:"),
+        st.Page("views/post_marcador.py", title="El dashboard", icon=":material/dashboard:"),
     ],
     "Entradas extra": [st.Page(i.page, title=f"{i.num}.ª · {i.label}", icon=ball) for i in INNINGS if int(i.num) > 9],
 }

@@ -1,4 +1,5 @@
 """Pares de gráficas ❌/✅ por capítulo. Cada función recibe datos ya cargados y devuelve una figura."""
+import numpy as np
 import pandas as pd
 import plotly.graph_objects as go
 
@@ -92,31 +93,34 @@ def cap3_bad(fs: pd.DataFrame) -> go.Figure:
 def cap3_good(fs: pd.DataFrame, compact: bool = False) -> go.Figure:
     d = fs[fs["season"] >= 1946]
     pct = d["pct_foreign"] * 100
+    # Área sombreada: el eje empieza en 0 y la serie es una parte del total, así que el área es honesta.
     fig = go.Figure(go.Scatter(x=d["season"], y=pct, mode="lines", line=dict(color=T.ACCENT, width=2.5),
-                               fill="tozeroy", fillcolor="rgba(42,120,214,0.08)",
+                               fill="tozeroy", fillcolor="rgba(42,120,214,0.06)",
                                hovertemplate="%{x}: <b>%{y:.1f}%</b> nacidos fuera de EE.UU.<extra></extra>"))
     v = d.set_index("season")["pct_foreign"] * 100
     peak = int(v.loc[1990:].idxmax())
     last = int(v.index.max())
-    notes = [
-        (1947, "1947: Jackie Robinson rompe la barrera racial;<br>llegan los peloteros afrolatinos", 120, -150),
-        (1990, "Años 90: academias en<br>República Dominicana", -60, -50),
-        (peak, f"Pico {peak}: {v[peak]:.1f}%", -10, -40),
-    ]
-    if compact:  # en espacios chicos (dashboard) solo el pico: menos es más
-        notes = notes[-1:]
-    for x, txt, ax, ay in notes:
-        fig.add_annotation(x=x, y=v[x], text=txt, ax=ax, ay=ay, showarrow=True, arrowcolor=T.MUTED, arrowwidth=1,
-                           font=dict(size=13, color=T.TEXT_2), align="left")
-    fig.add_scatter(x=[last], y=[v[last]], mode="markers+text", marker=dict(color=T.ACCENT, size=9),
-                    text=[f"{last}: {v[last]:.1f}%"], textposition="middle right", textfont=dict(color=T.TEXT, size=14),
-                    hoverinfo="skip", cliponaxis=False)
+    # Anclas (turning points): número en círculo + texto corto en negrita. El pico es el ancla principal.
+    anchors = [(1947, "1", "<b>1947</b> · Robinson", T.ACCENT),
+               (1990, "2", "<b>Años 90</b> · academias en RD", T.ACCENT),
+               (peak, "3", f"<b>Pico {peak}</b> · {v[peak]:.1f}%", T.ACCENT_2),
+               (last, "4", f"<b>Hoy</b> · {v[last]:.1f}%", T.ACCENT)]
+    if compact:
+        anchors = [a for a in anchors if a[1] in ("3", "4")]
+    for x, num, txt, color in anchors:
+        fig.add_scatter(x=[x], y=[v[x]], mode="markers+text", text=[num], textposition="middle center",
+                        textfont=dict(color="#ffffff", size=13, family=T.FONT),
+                        marker=dict(size=24 if num == "3" else 20, color=color, line=dict(color=T.SURFACE, width=2)),
+                        hoverinfo="skip", showlegend=False, cliponaxis=False)
+        xa, xs, ys = {"1": ("left", 16, 0), "2": ("right", -16, 8), "3": ("center", 0, 30), "4": ("right", 0, -30)}[num]
+        fig.add_annotation(x=x, y=v[x], text=txt, showarrow=False, xanchor=xa, xshift=xs, yshift=ys,
+                           font=dict(size=14, color=T.TEXT_2 if num != "3" else T.TEXT))
     fig.update_layout(
         template="best",
         title=T.title(f"La globalización de MLB casi se triplicó desde 1960 y tocó techo en {peak}",
                       "% de jugadores de MLB nacidos fuera de Estados Unidos, por temporada"),
-        yaxis=dict(ticksuffix="%", range=[0, 35]),
-        xaxis=dict(range=[1945, last + 7], tickvals=list(range(1950, last + 1, 10))),
+        yaxis=dict(ticksuffix="%", range=[0, 36]),
+        xaxis=dict(range=[1944, last + 3], tickvals=list(range(1950, last + 1, 10))),
     )
     return T.source(fig, "Lahman Baseball Database (SABR) 1946-2025 + MLB Stats API 2026")
 
@@ -135,55 +139,77 @@ def cap4_bad(prof: pd.DataFrame) -> go.Figure:
 
 # Clasificación nuestra: países con liga profesional de verano que compite con MLB por el talento.
 OWN_LEAGUE = {"USA": "MLB", "JPN": "NPB", "KOR": "KBO", "TWN": "CPBL", "MEX": "LMB"}
+# Color por región (máximo 3 colores + gris: validado para daltónicos en scatter, all-pairs).
+REGION_COLORS = [("Caribe", ["Caribe"], T.ACCENT),
+                 ("Centro y Sudamérica", ["Centroamérica", "Sudamérica"], T.ACCENT_2),
+                 ("Asia Oriental", ["Asia Oriental"], "#1baf7a")]
+OUTLINE = "rgba(11,11,11,0.7)"
 
 
-def cap4_good(prof: pd.DataFrame, third_var: bool = False) -> go.Figure:
+def cap4_good(prof: pd.DataFrame, dims: int = 2) -> go.Figure:
+    """dims=2: PIB × peloteros por millón · 3: + tamaño · 4: + color por región · 5: + forma (liga propia)."""
     d = prof[(prof["mlb_players_season"] > 0) & prof["gdp_pc_usd"].notna()].copy()
-    carib = d["region"].isin(["Caribe", "Centroamérica", "Sudamérica"])
-    league = d["iso3"].isin(OWN_LEAGUE)
+    if dims >= 4:
+        d["grupo"] = "Resto del mundo"
+        d["color"] = T.CONTEXT
+        for name, regions, color in REGION_COLORS:
+            m = d["region"].isin(regions)
+            d.loc[m, "grupo"], d.loc[m, "color"] = name, color
+    else:
+        carib = d["region"].isin(["Caribe", "Centroamérica", "Sudamérica"])
+        d["grupo"] = np.where(carib, "Caribe y Latinoamérica", "Resto del mundo")
+        d["color"] = np.where(carib, T.ACCENT, T.CONTEXT)
+    d["liga"] = d["iso3"].isin(OWN_LEAGUE) if dims >= 5 else False
+    max_px = 62
+    sizeref = 2.0 * d["mlb_players_season"].max() / (max_px ** 2)
     fig = go.Figure()
-    groups = [(~carib, T.CONTEXT, "Resto del mundo"), (carib, T.ACCENT, "Caribe y Latinoamérica")]
-    for mask, color, name in groups:
-        for has_league in ([False, True] if third_var else [None]):
-            m = mask if has_league is None else mask & (league == has_league)
-            s = d[m]
+    order = ["Resto del mundo", "Caribe y Latinoamérica"] + [r[0] for r in REGION_COLORS]
+    for grupo in [g for g in order if g in set(d["grupo"])]:
+        for liga in ([False, True] if dims >= 5 else [False]):
+            s = d[(d["grupo"] == grupo) & (d["liga"] == liga)]
             if s.empty:
                 continue
-            label = name if has_league is None else f"{name} · {'con liga propia' if has_league else 'sin liga propia'}"
-            fig.add_scatter(x=s["gdp_pc_usd"], y=s["players_per_million"], mode="markers", name=label,
-                            marker=dict(color=color, size=15 if has_league else 12,
-                                        symbol="diamond" if has_league else "circle",
-                                        line=dict(color=T.TEXT if has_league else T.SURFACE, width=2)),
+            marker = dict(color=s["color"].iloc[0], opacity=0.85, line=dict(color=OUTLINE, width=2),
+                          symbol="diamond" if liga else "circle")
+            if dims >= 3:
+                marker.update(size=s["mlb_players_season"], sizemode="area", sizeref=sizeref, sizemin=7)
+            else:
+                marker.update(size=13)
+            fig.add_scatter(x=s["gdp_pc_usd"], y=s["players_per_million"], mode="markers",
+                            name=grupo + (" · con liga propia" if liga else ""), marker=marker,
                             customdata=s[["country", "mlb_players_season"]],
                             hovertemplate="<b>%{customdata[0]}</b><br>PIB per cápita: $%{x:,.0f}<br>"
-                                          "%{y:.1f} jugadores por millón (%{customdata[1]} en 2026)<extra></extra>")
+                                          "%{y:.1f} peloteros por millón · %{customdata[1]} en MLB 2026<extra></extra>")
     for iso, pos in {"DOM": "top center", "CUW": "top center", "VEN": "bottom center",
                      "PRI": "top center", "USA": "top center", "JPN": "bottom left", "KOR": "top right",
                      "CUB": "top center", "MEX": "bottom center", "ABW": "middle right", "TWN": "top left"}.items():
         r = d[d.iso3 == iso]
-        if len(r) and (iso != "TWN" or third_var):
-            text = (r["country"] + f" · {OWN_LEAGUE[iso]}") if third_var and iso in OWN_LEAGUE else r["country"]
-            if third_var and iso in ("JPN", "TWN", "KOR"):
-                text = pd.Series([OWN_LEAGUE[iso]], index=r.index)  # 3 países juntos abajo: solo la sigla de su liga
+        if len(r) and (iso != "TWN" or dims >= 4):
+            text = r["country"]
+            if dims >= 5 and iso in OWN_LEAGUE:
+                text = pd.Series([OWN_LEAGUE[iso] if iso in ("JPN", "TWN", "KOR") else f"{r['country'].iloc[0]} · {OWN_LEAGUE[iso]}"],
+                                 index=r.index)
             fig.add_scatter(x=r["gdp_pc_usd"], y=r["players_per_million"], mode="text", text=text,
                             textposition=pos, textfont=dict(size=13, color=T.TEXT), hoverinfo="skip",
                             showlegend=False, cliponaxis=False)
+    extras = {3: " · tamaño = peloteros en MLB", 4: " · tamaño = peloteros · color = región",
+              5: " · tamaño = peloteros · color = región · ◆ = liga propia (clasificación nuestra)"}
     fig.update_layout(
         template="best",
         title=T.title("Entre los países con peloteros en MLB, ser más rico no significa producir más",
-                      "PIB per cápita (escala log) vs jugadores de MLB por millón de habitantes, temporada 2026"
-                      + (" · ◆ = liga profesional propia (clasificación nuestra)" if third_var else "")),
+                      "PIB per cápita (escala log) vs peloteros de MLB por millón de habitantes, 2026" + extras.get(dims, "")),
         xaxis=dict(type="log", title="PIB per cápita (USD, escala logarítmica)", showgrid=True, gridcolor=T.GRID,
                    tickvals=[3000, 5000, 10000, 20000, 50000, 100000],
                    ticktext=["$3 mil", "$5 mil", "$10 mil", "$20 mil", "$50 mil", "$100 mil"]),
-        yaxis=dict(title="Jugadores por millón"), showlegend=True,
+        yaxis=dict(title="Peloteros por millón", range=[-3, 32]), showlegend=True,
         legend=dict(x=0.01, y=0.99, xanchor="left", yanchor="top", font=dict(color=T.TEXT_2, size=14),
-                    bgcolor="rgba(247,244,236,0.85)"),
+                    bgcolor="rgba(247,244,236,0.85)", itemsizing="constant"),
     )
-    note = ("Los ricos con liga propia (◆) retienen a su talento:<br>la gráfica de 2 variables no lo podía mostrar."
-            if third_var else
-            "Ojo: correlación ≠ causa. Esta gráfica solo cruza<br>2 variables; hay otras que no están en los ejes.")
-    fig.add_annotation(text=note, xref="paper", yref="paper", x=0.99, y=0.66, xanchor="right", yanchor="top",
+    notes = {2: "Ojo: correlación ≠ causa. Esta gráfica solo cruza<br>2 variables; hay otras que no están en los ejes.",
+             3: "EE.UU. es la burbuja gigante; fuera de EE.UU.,<br>RD es la más grande aunque no sea la más alta.",
+             4: "El color agrupa regiones: el Caribe arriba,<br>Asia Oriental (aqua) abajo aunque sea rica.",
+             5: "Los ricos con liga propia (◆) retienen<br>a su talento: por eso quedan abajo."}
+    fig.add_annotation(text=notes[dims], xref="paper", yref="paper", x=0.99, y=0.66, xanchor="right", yanchor="top",
                        showarrow=False, align="right", font=dict(size=13, color=T.TEXT_2),
                        bgcolor="rgba(236,231,218,0.95)", borderpad=8)
     return T.source(fig, "MLB Stats API 2026; World Bank (PIB per cápita y población, 2024); Taiwán: DGBAS", True)
@@ -202,45 +228,45 @@ def cap5_bad(att: pd.DataFrame) -> go.Figure:
     return fig
 
 
+def growth_table(att: pd.DataFrame, base: int = 2019, end: int = 2025) -> pd.DataFrame:
+    """Crecimiento de la asistencia de cada liga entre base y el último año completo disponible (<= end)."""
+    rows = []
+    for lg, g in att[att["attendance_total"].notna() & (att["attendance_total"] > 0)].groupby("league"):
+        g = g.set_index("season")["attendance_total"]
+        if base not in g.index:
+            continue
+        last = int(max(y for y in g.index if y <= end))
+        rows.append({"league": lg, "base": g[base], "last_year": last, "last": g[last],
+                     "growth": g[last] / g[base] - 1})
+    return pd.DataFrame(rows).sort_values("growth")
+
+
 def cap5_good(att: pd.DataFrame, base: int = 2019, end: int = 2025) -> go.Figure:
-    d = att[att["season"].between(2015, end) & att["attendance_total"].notna() & (att["attendance_total"] > 0)].copy()
-    b = d[d.season == base].set_index("league")["attendance_total"]
-    d = d[d.league.isin(b.index)]
-    d["index"] = d["attendance_total"] / d["league"].map(b) * 100
+    d = growth_table(att, base, end)
     focus = {"KBO": T.ACCENT, "CPBL": T.ACCENT_2}
-    ends = []
-    fig = go.Figure()
-    fig.add_vrect(x0=2019.5, x1=2021.5, fillcolor=T.GRID, opacity=0.5, line_width=0,
-                  annotation_text="COVID", annotation_position="top left", annotation_font=dict(color=T.MUTED, size=12))
-    for lg in sorted(d.league.unique(), key=lambda x: x in focus):
-        g = d[d.league == lg].sort_values("season")
-        g = g[~g.season.isin([2020, 2021])]  # temporadas con aforo restringido: no son comparables
-        color = focus.get(lg, T.CONTEXT)
-        fig.add_scatter(x=g["season"], y=g["index"], mode="lines+markers", name=lg,
-                        line=dict(color=color, width=3 if lg in focus else 2), marker=dict(size=7, color=color),
-                        connectgaps=False, customdata=g["attendance_total"],
-                        hovertemplate=f"<b>{LEAGUE_NAMES.get(lg, lg)}</b> %{{x}}<br>%{{customdata:,.0f}} asistentes"
-                                      f"<br>Índice: %{{y:.0f}} ({base} = 100)<extra></extra>")
-        last = g.iloc[-1]
-        ends.append((lg, last["season"], last["index"]))
-    # Etiquetas directas sin encimarse: separación mínima de 9 puntos de índice.
-    placed = []
-    for lg, x, y in sorted(ends, key=lambda e: e[2]):
-        ly = max(y, placed[-1] + 9) if placed else y
-        placed.append(ly)
-        fig.add_annotation(x=x, y=ly, text=f"<b>{LEAGUE_NAMES.get(lg, lg)}</b> {y - 100:+.0f}%", xanchor="left", xshift=10,
-                           showarrow=False, font=dict(size=13, color=T.TEXT if lg in focus else T.MUTED))
-    fig.add_hline(y=100, line=dict(color=T.MUTED, width=1, dash="dot"))
-    kbo = d[(d.league == "KBO") & (d.season == end)]["index"].iloc[0] - 100
-    cpbl = d[(d.league == "CPBL") & (d.season == end)]["index"].iloc[0] - 100
+    names = [LEAGUE_NAMES.get(lg, lg).replace(")", f", hasta {y})") if y != end else LEAGUE_NAMES.get(lg, lg)
+             for lg, y in zip(d["league"], d["last_year"])]
+    labels = [f"{g:+.0%} · de {b / 1e6:.1f} M a {l / 1e6:.1f} M" for g, b, l in zip(d["growth"], d["base"], d["last"])]
+    fig = go.Figure(go.Bar(
+        x=d["growth"] * 100, y=names, orientation="h", text=[t if g >= 0 else "" for t, g in zip(labels, d["growth"])],
+        textposition="outside", cliponaxis=False,
+        marker=dict(color=[focus.get(lg, T.CONTEXT) for lg in d["league"]], cornerradius=4),
+        textfont=dict(size=14, color=T.TEXT_2),
+        hovertemplate="<b>%{y}</b><br>Crecimiento: %{x:+.0f}%<extra></extra>"))
+    for name, label, g in zip(names, labels, d["growth"]):
+        if g < 0:  # la etiqueta de una barra negativa va a la derecha del 0 para no chocar con el nombre
+            fig.add_annotation(x=0, y=name, text=label, xanchor="left", xshift=8, showarrow=False,
+                               font=dict(size=14, color=T.TEXT_2))
+    fig.add_vline(x=0, line=dict(color=T.TEXT_2, width=1.5))
+    kbo, cpbl = (d.set_index("league").loc[k, "growth"] for k in ("KBO", "CPBL"))
     fig.update_layout(
         template="best",
-        title=T.title(f"Corea y Taiwán llenan estadios como nunca: {kbo:+.0f}% y {cpbl:+.0f}% vs {base}",
-                      f"Asistencia total de la temporada regular, índice {base} = 100 · se omiten 2020-21 (aforo restringido)"),
-        xaxis=dict(range=[2014.6, end + 1.8], tickvals=list(range(2015, end + 1))), yaxis=dict(title=f"Índice ({base} = 100)"),
-        margin=dict(r=40),
+        title=T.title(f"Corea y Taiwán llenan estadios como nunca: {kbo:+.0%} y {cpbl:+.0%} vs {base}",
+                      f"Crecimiento de la asistencia total de la temporada regular, {base} → {end}"),
+        xaxis=dict(ticksuffix="%", showgrid=True, gridcolor=T.GRID, range=[-40, 260], zeroline=False),
+        yaxis=dict(showgrid=False, tickfont=dict(color=T.TEXT, size=14), ticklabelstandoff=10),
     )
-    return T.source(fig, "npb.jp, KBO, CPBL, Baseball-Reference/MLB (datos curados; ver data/curated/leagues_attendance.csv)")
+    return T.source(fig, "npb.jp, KBO, CPBL, Baseball-Reference/MLB, LMB (data/curated/leagues_attendance.csv)")
 
 
 # ---------- Capítulo 6: ejes honestos ----------
@@ -288,7 +314,7 @@ def cap6_good(views: pd.DataFrame) -> go.Figure:
         template="best", barmode="group", bargap=0.3, bargroupgap=0.08,
         title=T.title(f"Un juego en Tokio lo vieron {tokyo['Japón'] / tokyo['EE.UU.']:.0f} veces más japoneses que estadounidenses",
                       "Espectadores promedio por transmisión (millones) · Japón en azul, EE.UU. en gris · un solo eje desde 0"),
-        xaxis=dict(range=[0, 33], showgrid=True, gridcolor=T.GRID, ticksuffix=" M"),
+        xaxis=dict(range=[0, 33], dtick=5, showgrid=True, gridcolor=T.GRID, ticksuffix=" M"),
         yaxis=dict(showgrid=False, tickfont=dict(color=T.TEXT, size=14), ticklabelstandoff=10),
     )
     return T.source(fig, "Video Research Japón, Nielsen/FOX vía MLB.com, Fox Sports, Sports Media Watch (data/curated/viewership_events.csv)")
@@ -302,7 +328,8 @@ def axis_gap_share(views: pd.DataFrame, start: float, end: float) -> float:
     return (us - jp) / (end - start)
 
 
-def axis_control(views: pd.DataFrame, start: float, end: float) -> tuple[go.Figure, float, float]:
+def axis_control(views: pd.DataFrame, start: float, end: float, hide_axis: bool = False,
+                 title: str | None = None, source: bool = True) -> tuple[go.Figure, float, float]:
     """Mismas 2 barras con el eje que elija el analista. Devuelve (figura, diferencia real, diferencia que se siente)."""
     v = views[(views.metric == "avg_viewers") & views.event.str.startswith("World Series 2025 (7-game average)")]
     us = float(v[v.market == "United States"]["value"].iloc[0])
@@ -310,17 +337,47 @@ def axis_control(views: pd.DataFrame, start: float, end: float) -> tuple[go.Figu
     real = us / jp
     felt = (us - start) / max(jp - start, 1e-9)
     fig = go.Figure(go.Bar(x=["EE.UU.", "Japón"], y=[us, jp], marker=dict(color=[T.CONTEXT, T.ACCENT], cornerradius=4),
-                           text=[f"{us:.1f} M", f"{jp:.1f} M"], textposition="outside", cliponaxis=False,
-                           textfont=dict(size=16, color=T.TEXT), width=0.5,
+                           text=[f"{us:.1f} M", f"{jp:.1f} M"] if not hide_axis else None,
+                           textposition="outside", cliponaxis=False,
+                           textfont=dict(size=16, color=T.TEXT), width=0.55,
                            hovertemplate="%{x}: %{y:.1f} M<extra></extra>"))
     fig.update_layout(
         template="best",
-        title=T.title("Serie Mundial 2025: espectadores promedio por juego",
-                      f"El eje va de {start:g} M a {end:g} M"),
-        yaxis=dict(range=[start, end], ticksuffix=" M", showgrid=True, gridcolor=T.GRID, zeroline=start == 0),
+        title=T.title(title or "Serie Mundial 2025: espectadores promedio por juego",
+                      "Eje sin números" if hide_axis else f"El eje va de {start:g} M a {end:g} M"),
+        yaxis=dict(range=[start, end], ticksuffix=" M", showgrid=not hide_axis, gridcolor=T.GRID,
+                   showticklabels=not hide_axis),
         xaxis=dict(tickfont=dict(color=T.TEXT, size=16)),
     )
-    return T.source(fig, "Nielsen vía MLB.com; Video Research (data/curated/viewership_events.csv)"), real, felt
+    if source:
+        fig = T.source(fig, "Nielsen vía MLB.com; Video Research (data/curated/viewership_events.csv)")
+    return fig, real, felt
+
+
+def bars_with_trend(ws: pd.DataFrame, start: int = 1995, window: int = 5) -> go.Figure:
+    """Bar chart + línea bien usados: misma unidad, un solo eje, la línea agrega la tendencia (moving average)."""
+    d = ws.dropna(subset=["avg_viewers_m"]).sort_values("season")
+    d = d.assign(trend=d["avg_viewers_m"].rolling(window, min_periods=window).mean())
+    d = d[d["season"] >= start]
+    first = d.head(5)["avg_viewers_m"].mean()
+    last = d.tail(5)["avg_viewers_m"].mean()
+    fig = go.Figure()
+    fig.add_bar(x=d["season"], y=d["avg_viewers_m"], marker=dict(color=T.CONTEXT, cornerradius=3), name="Cada año",
+                hovertemplate="%{x}: %{y:.1f} M<extra></extra>")
+    fig.add_scatter(x=d["season"], y=d["trend"], mode="lines", line=dict(color=T.ACCENT, width=3.5),
+                    name=f"Moving average de {window} años", hovertemplate="Promedio %{x}: %{y:.1f} M<extra></extra>")
+    lt = d.dropna(subset=["trend"]).iloc[-1]
+    fig.add_annotation(x=lt["season"], y=lt["trend"], text=f"<b>Moving average</b> ({window} años)", xanchor="left",
+                       xshift=10, showarrow=False, font=dict(size=13, color=T.ACCENT))
+    ratio = first / last
+    fig.update_layout(
+        template="best",
+        title=T.title(f"Cada barra es un año; la línea es la tendencia: la audiencia cayó a la {'mitad' if 1.8 < ratio < 2.2 else f'{1 / ratio:.0%}'} desde los 90",
+                      f"Espectadores promedio de la Serie Mundial en EE.UU. (millones), {start}-{int(d['season'].max())} · un solo eje desde 0"),
+        yaxis=dict(range=[0, 32], ticksuffix=" M"), xaxis=dict(range=[start - 1, int(d["season"].max()) + 5]),
+        bargap=0.25,
+    )
+    return T.source(fig, "Nielsen vía Wikipedia, World Series television ratings")
 
 
 # ---------- Capítulo 7: accesibilidad ----------
@@ -328,32 +385,37 @@ def axis_control(views: pd.DataFrame, start: float, end: float) -> tuple[go.Figu
 REGIONS_7 = {"Caribe": "Caribe", "Sudamérica": "Sudamérica", "Asia Oriental": "Asia Oriental"}
 
 
-def _region_share(pcs: pd.DataFrame) -> pd.DataFrame:
+def _region_share(pcs: pd.DataFrame) -> tuple[pd.DataFrame, pd.DataFrame, pd.Series]:
+    """% y conteo de peloteros por región y temporada, y el total de cada temporada."""
     d = pcs[(pcs.season >= 1980) & pcs.region.isin(REGIONS_7)]
     tot = pcs[pcs.season >= 1980].groupby("season")["total_players"].first()
-    out = d.groupby(["season", "region"])["players"].sum().unstack().reindex(tot.index).fillna(0).div(tot, axis=0) * 100
-    return out.reset_index()
+    counts = d.groupby(["season", "region"])["players"].sum().unstack().reindex(tot.index).fillna(0)
+    share = counts.div(tot, axis=0) * 100
+    return share, counts, tot
 
 
 def cap7(pcs: pd.DataFrame, colors: dict, labels_direct: bool, generic: bool) -> go.Figure:
-    d = _region_share(pcs)
+    share, counts, tot = _region_share(pcs)
+    seasons = share.index
     fig = go.Figure()
     for reg, color in colors.items():
-        fig.add_scatter(x=d["season"], y=d[reg], name=reg, mode="lines", line=dict(color=color, width=3),
-                        hovertemplate=f"<b>{reg}</b> %{{x}}: %{{y:.1f}}%<extra></extra>")
+        cd = np.stack([counts[reg].values, tot.values], axis=1)
+        fig.add_scatter(x=seasons, y=share[reg], name=reg, mode="lines", line=dict(color=color, width=3), customdata=cd,
+                        hovertemplate=f"<b>{reg}</b> %{{x}}: %{{customdata[0]:.0f}} de %{{customdata[1]:,.0f}} peloteros · %{{y:.1f}}%<extra></extra>")
         if labels_direct:
-            fig.add_annotation(x=d["season"].iloc[-1], y=d[reg].iloc[-1], text=f"<b>{reg}</b> {d[reg].iloc[-1]:.1f}%",
+            fig.add_annotation(x=seasons[-1], y=share[reg].iloc[-1],
+                               text=f"<b>{reg}</b> {share[reg].iloc[-1]:.1f}% · {int(counts[reg].iloc[-1])} peloteros",
                                xanchor="left", xshift=8, showarrow=False, font=dict(size=13, color=T.TEXT))
     if generic:
         fig.update_layout(template="comun", title="Jugadores por región (%)")
     else:
-        last = d.iloc[-1]
+        last = seasons[-1]
         fig.update_layout(
             template="best",
-            title=T.title(f"El Caribe aporta {last['Caribe'] / last['Asia Oriental']:.0f} veces más peloteros a MLB que Asia",
-                          "% de jugadores de MLB nacidos en cada región, por temporada"),
+            title=T.title(f"El Caribe aporta {share.loc[last, 'Caribe'] / share.loc[last, 'Asia Oriental']:.0f} veces más peloteros a MLB que Asia",
+                          f"% del total de peloteros que jugaron en MLB cada temporada (en {last}: {int(tot[last]):,})"),
             yaxis=dict(ticksuffix="%"),
-            xaxis=dict(range=[1979, int(d.season.max()) + 9], tickvals=list(range(1980, int(d.season.max()) + 1, 10))),
+            xaxis=dict(range=[1979, int(last) + 14], tickvals=list(range(1980, int(last) + 1, 10))),
         )
         fig = T.source(fig, "Lahman (SABR) 1980-2025 + MLB Stats API 2026")
     return fig
@@ -568,8 +630,9 @@ def pie_ok(pcs: pd.DataFrame, season: int) -> go.Figure:
                            textfont=dict(size=15, color=T.TEXT), showlegend=False,
                            hovertemplate="%{label}: %{value} peloteros (%{percent:.1%})<extra></extra>"))
     fig.update_layout(template="best", margin=dict(l=110, r=110, t=110, b=40),
-                      title=dict(text=T.title(f"3 de cada 4 son de EE.UU.;<br>RD, casi 1 de cada {round(total / dom)}",
-                                              f"Peloteros de MLB por país de nacimiento, {season}"), font=dict(size=20)))
+                      title=dict(text=T.title(f"{'Casi 3' if usa / total < 0.75 else '3'} de cada 4 peloteros de MLB<br>nacieron en Estados Unidos",
+                                              f"República Dominicana aporta {'casi ' if dom / total < 0.1 else ''}1 de cada 10 · temporada {season}"),
+                                font=dict(size=20)))
     return fig
 
 
@@ -630,3 +693,28 @@ def sharks_icecream(step: int) -> go.Figure:
                       title=T.title(title, "Índice mensual (máximo = 100) · Ejemplo ilustrativo · datos simulados"),
                       yaxis=dict(range=[0, 115]), xaxis=dict(range=[-0.3, 13.2]))
     return T.source(fig, "ejemplo ilustrativo con datos simulados, no son cifras reales")
+
+
+
+def normalize_pair(prof: pd.DataFrame) -> go.Figure:
+    """Misma pregunta, dos respuestas: totales vs por millón (historia completa de MLB)."""
+    from plotly.subplots import make_subplots
+    isos = ["DOM", "VEN", "CUB", "PRI", "CAN", "MEX", "JPN", "CUW"]
+    d = prof[prof.iso3.isin(isos)].set_index("iso3")
+    color = {"CUW": T.ACCENT, "DOM": T.ACCENT_2}
+    fig = make_subplots(rows=1, cols=2, horizontal_spacing=0.18,
+                        subplot_titles=("<b>Totales</b>: ¿quién aporta más peloteros?",
+                                        "<b>Por millón de habitantes</b>: ¿dónde es más común?"))
+    for col, field, fmt in [(1, "mlb_players_alltime", "{:,.0f}"), (2, "alltime_per_million", "{:.0f}")]:
+        s = d.sort_values(field)
+        fig.add_bar(x=s[field], y=s["country"], orientation="h", row=1, col=col, showlegend=False,
+                    marker=dict(color=[color.get(i, T.CONTEXT) for i in s.index], cornerradius=3),
+                    text=[fmt.format(v) for v in s[field]], textposition="outside", cliponaxis=False,
+                    textfont=dict(size=13, color=T.TEXT_2), hovertemplate="%{y}: %{x:,.0f}<extra></extra>")
+    fig.update_xaxes(visible=False)
+    fig.update_yaxes(showgrid=False, tickfont=dict(color=T.TEXT, size=13), ticklabelstandoff=6)
+    fig.update_layout(template="best",
+                      title=T.title("Misma pregunta, dos respuestas: RD gana en total, Curaçao por habitante",
+                                    "Peloteros de MLB en toda la historia · mismos países, mismo color en ambos paneles"))
+    fig.update_annotations(font=dict(size=15, color=T.TEXT_2))
+    return T.source(fig, "Lahman (SABR) + MLB Stats API; población: World Bank 2024")

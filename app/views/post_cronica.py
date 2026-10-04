@@ -50,5 +50,5 @@ elif d > g:
     st.markdown(f"**Ganaron los datos, {d} a {g}.** Por eso se grafica antes de opinar.")
 else:
     st.markdown(f"**Empate a {g}.** Lo resolvemos en entradas extra.")
-st.page_link("views/post_marcador.py", label="Ver el marcador como dashboard →", icon=":material/dashboard:")
+st.page_link("views/post_marcador.py", label="Ver todo el partido en un dashboard →", icon=":material/dashboard:")
 st.page_link("views/10_dinero.py", label="Entradas extra: el dinero →", icon=":material/sports_baseball:")

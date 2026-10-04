@@ -1,3 +1,4 @@
+import pandas as pd
 import streamlit as st
 
 from lib import charts, data
@@ -23,27 +24,33 @@ def show(fig, title=None, h=380, best=True):
 
 
 scoreboard()
-st.markdown("<div class='eyebrow'>Post-partido · El marcador</div>", unsafe_allow_html=True)
-st.title("Un tablero se lee como un texto")
+st.markdown("<div class='eyebrow'>Post-partido · El dashboard</div>", unsafe_allow_html=True)
+st.title("Un dashboard se lee como un texto")
 st.markdown("<div class='jugada'>Un marcador de estadio se entiende desde la última fila de las gradas: lo importante "
             "arriba, a la izquierda y en grande. Un dashboard funciona igual. Aquí está todo el partido en una pantalla."
             "</div>", unsafe_allow_html=True)
+st.markdown("**Mismos datos, misma información: lo único que cambia es la presentación.** "
+            "Compara cuánto tardas en encontrar la historia en cada versión.")
 modo = mode_toggle("cap10")
 ultimo = int(fs.index.max())
+dom = int(prof.set_index("iso3").loc["DOM", "mlb_players_season"])
+cpbl = charts.growth_table(att).set_index("league").loc["CPBL", "growth"]
+eu_mlb = int(eu["mlb_players"].sum())
 
 if modo == COMUN:
+    # Las mismas 4 historias y los mismos 4 KPIs que la ✅, pero en su versión común y sin orden.
     c1, c2, c3 = st.columns(3)
     with c1:
-        show(charts.cap4_bad(prof), h=330, best=False)
+        show(charts.cap6_bad(views), h=330, best=False)
     with c2:
-        show(charts.cap2_bad(prof), h=330, best=False)
+        show(charts.cap1_bad(prof), h=330, best=False)
     with c3:
-        show(charts.cap8_bad(eu), h=330, best=False)
-    show(charts.cap5_bad(att), h=300, best=False)
-    st.dataframe(
-        fs.reset_index()[["season", "players", "foreign_players", "pct_foreign"]].tail(5),
-        hide_index=True,
-    )
+        show(charts.cap5_bad(att), h=330, best=False)
+    show(charts.cap3_bad(fs.reset_index()), h=300, best=False)
+    st.dataframe(pd.DataFrame([{
+        "pct_foreign": fs.loc[ultimo, "pct_foreign"], "dom_players": dom,
+        "cpbl_att_growth": cpbl, "eu_mlb_roster": eu_mlb, "season": ultimo,
+    }]), hide_index=True)
 else:
     with st.container(border=True):
         st.markdown("##### 1 · ¿Qué tan internacional es MLB?")
@@ -51,10 +58,10 @@ else:
         k[0].metric(f"Nacidos fuera de EE.UU. ({ultimo})", f"{fs.loc[ultimo, 'pct_foreign']:.0%}",
                     f"{(fs.loc[ultimo, 'pct_foreign'] - fs.loc[2017, 'pct_foreign']) * 100:+.1f} pts vs pico 2017",
                     delta_color="off", delta_arrow="off")
-        k[1].metric("Dominicanos en MLB", int(prof.set_index("iso3").loc["DOM", "mlb_players_season"]), "1 de cada 3 extranjeros",
+        k[1].metric("Dominicanos en MLB", dom, "1 de cada 3 extranjeros",
                     delta_color="off", delta_arrow="off")
-        k[2].metric("Asistencia CPBL vs 2019", "+167%", "Taiwán, récord 2025", delta_color="off", delta_arrow="off")
-        k[3].metric("Europeos en un roster de MLB", "0", "27 profesionales en total", delta_color="off", delta_arrow="off")
+        k[2].metric("Asistencia CPBL vs 2019", f"{cpbl:+.0%}", "Taiwán, récord 2025", delta_color="off", delta_arrow="off")
+        k[3].metric("Europeos en un roster de MLB", str(eu_mlb), f"{int(eu['total_pro'].sum())} profesionales en total", delta_color="off", delta_arrow="off")
     with st.container(border=True):
         st.markdown("##### 2 · ¿De dónde vienen los peloteros?")
         left, right = st.columns([3, 2])
@@ -71,6 +78,7 @@ else:
             show(charts.cap6_good(views), "Japón ve más béisbol que EE.UU.")
 
 explain(modo, [
+    "**Los dos dashboards tienen exactamente los mismos datos:** cambia la presentación, y con ella lo que entiendes.",
     "**Anchoring:** los 4 números van arriba a la izquierda; son lo primero que lee el ojo y fijan el mensaje.",
     "**Layout en Z, de lo general a lo particular:** números → tendencia → países → audiencia, cada bloque responde una pregunta.",
     "**El espacio manda:** cada gráfica tiene un tercio o la mitad del ancho; por eso 6 países y títulos cortos.",
