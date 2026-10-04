@@ -1,0 +1,301 @@
+season,team,team_abbr,payroll_usd,wins,source_url,verified
+2017,Arizona Diamondbacks,ARI,106580200,93,https://www.baseball-reference.com/leagues/majors/2017-misc.shtml,yes
+2017,Atlanta Braves,ATL,119705250,72,https://www.baseball-reference.com/leagues/majors/2017-misc.shtml,yes
+2017,Baltimore Orioles,BAL,161621633,75,https://www.baseball-reference.com/leagues/majors/2017-misc.shtml,yes
+2017,Boston Red Sox,BOS,200550750,93,https://www.baseball-reference.com/leagues/majors/2017-misc.shtml,yes
+2017,Chicago Cubs,CHC,177210667,92,https://www.baseball-reference.com/leagues/majors/2017-misc.shtml,yes
+2017,Chicago White Sox,CHW,97842000,67,https://www.baseball-reference.com/leagues/majors/2017-misc.shtml,yes
+2017,Cincinnati Reds,CIN,79315786,68,https://www.baseball-reference.com/leagues/majors/2017-misc.shtml,yes
+2017,Cleveland Indians,CLE,114427167,102,https://www.baseball-reference.com/leagues/majors/2017-misc.shtml,yes
+2017,Colorado Rockies,COL,106650000,87,https://www.baseball-reference.com/leagues/majors/2017-misc.shtml,yes
+2017,Detroit Tigers,DET,118375600,64,https://www.baseball-reference.com/leagues/majors/2017-misc.shtml,yes
+2017,Houston Astros,HOU,157656400,101,https://www.baseball-reference.com/leagues/majors/2017-misc.shtml,yes
+2017,Kansas City Royals,KCR,127555817,80,https://www.baseball-reference.com/leagues/majors/2017-misc.shtml,yes
+2017,Los Angeles Angels,LAA,181125500,80,https://www.baseball-reference.com/leagues/majors/2017-misc.shtml,yes
+2017,Los Angeles Dodgers,LAD,201466263,104,https://www.baseball-reference.com/leagues/majors/2017-misc.shtml,yes
+2017,Miami Marlins,MIA,111591100,77,https://www.baseball-reference.com/leagues/majors/2017-misc.shtml,yes
+2017,Milwaukee Brewers,MIL,68439300,86,https://www.baseball-reference.com/leagues/majors/2017-misc.shtml,yes
+2017,Minnesota Twins,MIN,103932500,85,https://www.baseball-reference.com/leagues/majors/2017-misc.shtml,yes
+2017,New York Mets,NYM,176615252,70,https://www.baseball-reference.com/leagues/majors/2017-misc.shtml,yes
+2017,New York Yankees,NYY,182424700,91,https://www.baseball-reference.com/leagues/majors/2017-misc.shtml,yes
+2017,Oakland Athletics,OAK,51560000,75,https://www.baseball-reference.com/leagues/majors/2017-misc.shtml,yes
+2017,Philadelphia Phillies,PHI,86276000,66,https://www.baseball-reference.com/leagues/majors/2017-misc.shtml,yes
+2017,Pittsburgh Pirates,PIT,102953333,75,https://www.baseball-reference.com/leagues/majors/2017-misc.shtml,yes
+2017,San Diego Padres,SDP,49248767,71,https://www.baseball-reference.com/leagues/majors/2017-misc.shtml,yes
+2017,San Francisco Giants,SFG,177399833,64,https://www.baseball-reference.com/leagues/majors/2017-misc.shtml,yes
+2017,Seattle Mariners,SEA,172438700,78,https://www.baseball-reference.com/leagues/majors/2017-misc.shtml,yes
+2017,St. Louis Cardinals,STL,129652933,83,https://www.baseball-reference.com/leagues/majors/2017-misc.shtml,yes
+2017,Tampa Bay Rays,TBR,79473033,80,https://www.baseball-reference.com/leagues/majors/2017-misc.shtml,yes
+2017,Texas Rangers,TEX,207326274,78,https://www.baseball-reference.com/leagues/majors/2017-misc.shtml,yes
+2017,Toronto Blue Jays,TOR,158890575,76,https://www.baseball-reference.com/leagues/majors/2017-misc.shtml,yes
+2017,Washington Nationals,WSN,175587301,97,https://www.baseball-reference.com/leagues/majors/2017-misc.shtml,yes
+2018,Arizona Diamondbacks,ARI,134850600,82,https://www.baseball-reference.com/leagues/majors/2018-misc.shtml,yes
+2018,Atlanta Braves,ATL,115848667,90,https://www.baseball-reference.com/leagues/majors/2018-misc.shtml,yes
+2018,Baltimore Orioles,BAL,141555833,47,https://www.baseball-reference.com/leagues/majors/2018-misc.shtml,yes
+2018,Boston Red Sox,BOS,222205000,108,https://www.baseball-reference.com/leagues/majors/2018-misc.shtml,yes
+2018,Chicago Cubs,CHC,205373881,95,https://www.baseball-reference.com/leagues/majors/2018-misc.shtml,yes
+2018,Chicago White Sox,CHW,75092000,62,https://www.baseball-reference.com/leagues/majors/2018-misc.shtml,yes
+2018,Cincinnati Reds,CIN,94587500,67,https://www.baseball-reference.com/leagues/majors/2018-misc.shtml,yes
+2018,Cleveland Indians,CLE,143375233,91,https://www.baseball-reference.com/leagues/majors/2018-misc.shtml,yes
+2018,Colorado Rockies,COL,136658500,91,https://www.baseball-reference.com/leagues/majors/2018-misc.shtml,yes
+2018,Detroit Tigers,DET,111531000,64,https://www.baseball-reference.com/leagues/majors/2018-misc.shtml,yes
+2018,Houston Astros,HOU,172781200,103,https://www.baseball-reference.com/leagues/majors/2018-misc.shtml,yes
+2018,Kansas City Royals,KCR,95199167,58,https://www.baseball-reference.com/leagues/majors/2018-misc.shtml,yes
+2018,Los Angeles Angels,LAA,166849666,80,https://www.baseball-reference.com/leagues/majors/2018-misc.shtml,yes
+2018,Los Angeles Dodgers,LAD,164703429,92,https://www.baseball-reference.com/leagues/majors/2018-misc.shtml,yes
+2018,Miami Marlins,MIA,86515143,63,https://www.baseball-reference.com/leagues/majors/2018-misc.shtml,yes
+2018,Milwaukee Brewers,MIL,109295700,96,https://www.baseball-reference.com/leagues/majors/2018-misc.shtml,yes
+2018,Minnesota Twins,MIN,110275000,78,https://www.baseball-reference.com/leagues/majors/2018-misc.shtml,yes
+2018,New York Mets,NYM,161403844,77,https://www.baseball-reference.com/leagues/majors/2018-misc.shtml,yes
+2018,New York Yankees,NYY,160643032,100,https://www.baseball-reference.com/leagues/majors/2018-misc.shtml,yes
+2018,Oakland Athletics,OAK,69883333,97,https://www.baseball-reference.com/leagues/majors/2018-misc.shtml,yes
+2018,Philadelphia Phillies,PHI,93874333,80,https://www.baseball-reference.com/leagues/majors/2018-misc.shtml,yes
+2018,Pittsburgh Pirates,PIT,88141000,82,https://www.baseball-reference.com/leagues/majors/2018-misc.shtml,yes
+2018,San Diego Padres,SDP,93821067,66,https://www.baseball-reference.com/leagues/majors/2018-misc.shtml,yes
+2018,San Francisco Giants,SFG,202060277,73,https://www.baseball-reference.com/leagues/majors/2018-misc.shtml,yes
+2018,Seattle Mariners,SEA,157090065,89,https://www.baseball-reference.com/leagues/majors/2018-misc.shtml,yes
+2018,St. Louis Cardinals,STL,157713667,88,https://www.baseball-reference.com/leagues/majors/2018-misc.shtml,yes
+2018,Tampa Bay Rays,TBR,46569867,90,https://www.baseball-reference.com/leagues/majors/2018-misc.shtml,yes
+2018,Texas Rangers,TEX,106099628,67,https://www.baseball-reference.com/leagues/majors/2018-misc.shtml,yes
+2018,Toronto Blue Jays,TOR,151670772,73,https://www.baseball-reference.com/leagues/majors/2018-misc.shtml,yes
+2018,Washington Nationals,WSN,188886699,82,https://www.baseball-reference.com/leagues/majors/2018-misc.shtml,yes
+2019,Arizona Diamondbacks,ARI,124016266,85,https://www.baseball-reference.com/leagues/majors/2019-misc.shtml,yes
+2019,Atlanta Braves,ATL,133186667,97,https://www.baseball-reference.com/leagues/majors/2019-misc.shtml,yes
+2019,Baltimore Orioles,BAL,82696100,54,https://www.baseball-reference.com/leagues/majors/2019-misc.shtml,yes
+2019,Boston Red Sox,BOS,218978142,84,https://www.baseball-reference.com/leagues/majors/2019-misc.shtml,yes
+2019,Chicago Cubs,CHC,220305215,84,https://www.baseball-reference.com/leagues/majors/2019-misc.shtml,yes
+2019,Chicago White Sox,CHW,80846333,72,https://www.baseball-reference.com/leagues/majors/2019-misc.shtml,yes
+2019,Cincinnati Reds,CIN,109737499,75,https://www.baseball-reference.com/leagues/majors/2019-misc.shtml,yes
+2019,Cleveland Indians,CLE,151257783,93,https://www.baseball-reference.com/leagues/majors/2019-misc.shtml,yes
+2019,Colorado Rockies,COL,145348500,71,https://www.baseball-reference.com/leagues/majors/2019-misc.shtml,yes
+2019,Detroit Tigers,DET,100618500,47,https://www.baseball-reference.com/leagues/majors/2019-misc.shtml,yes
+2019,Houston Astros,HOU,166042500,107,https://www.baseball-reference.com/leagues/majors/2019-misc.shtml,yes
+2019,Kansas City Royals,KCR,98183242,59,https://www.baseball-reference.com/leagues/majors/2019-misc.shtml,yes
+2019,Los Angeles Angels,LAA,158078584,72,https://www.baseball-reference.com/leagues/majors/2019-misc.shtml,yes
+2019,Los Angeles Dodgers,LAD,193553333,106,https://www.baseball-reference.com/leagues/majors/2019-misc.shtml,yes
+2019,Miami Marlins,MIA,74683643,57,https://www.baseball-reference.com/leagues/majors/2019-misc.shtml,yes
+2019,Milwaukee Brewers,MIL,128842900,89,https://www.baseball-reference.com/leagues/majors/2019-misc.shtml,yes
+2019,Minnesota Twins,MIN,113758333,101,https://www.baseball-reference.com/leagues/majors/2019-misc.shtml,yes
+2019,New York Mets,NYM,154837230,86,https://www.baseball-reference.com/leagues/majors/2019-misc.shtml,yes
+2019,New York Yankees,NYY,228442421,103,https://www.baseball-reference.com/leagues/majors/2019-misc.shtml,yes
+2019,Oakland Athletics,OAK,102935833,97,https://www.baseball-reference.com/leagues/majors/2019-misc.shtml,yes
+2019,Philadelphia Phillies,PHI,141786962,81,https://www.baseball-reference.com/leagues/majors/2019-misc.shtml,yes
+2019,Pittsburgh Pirates,PIT,72915501,69,https://www.baseball-reference.com/leagues/majors/2019-misc.shtml,yes
+2019,San Diego Padres,SDP,90260767,70,https://www.baseball-reference.com/leagues/majors/2019-misc.shtml,yes
+2019,San Francisco Giants,SFG,175450753,77,https://www.baseball-reference.com/leagues/majors/2019-misc.shtml,yes
+2019,Seattle Mariners,SEA,126874600,68,https://www.baseball-reference.com/leagues/majors/2019-misc.shtml,yes
+2019,St. Louis Cardinals,STL,161120267,91,https://www.baseball-reference.com/leagues/majors/2019-misc.shtml,yes
+2019,Tampa Bay Rays,TBR,57098067,96,https://www.baseball-reference.com/leagues/majors/2019-misc.shtml,yes
+2019,Texas Rangers,TEX,104433499,78,https://www.baseball-reference.com/leagues/majors/2019-misc.shtml,yes
+2019,Toronto Blue Jays,TOR,62180671,67,https://www.baseball-reference.com/leagues/majors/2019-misc.shtml,yes
+2019,Washington Nationals,WSN,203016595,93,https://www.baseball-reference.com/leagues/majors/2019-misc.shtml,yes
+2020,Arizona Diamondbacks,ARI,88176667,25,https://www.baseball-reference.com/leagues/majors/2020-misc.shtml,yes
+2020,Atlanta Braves,ATL,130705000,35,https://www.baseball-reference.com/leagues/majors/2020-misc.shtml,yes
+2020,Baltimore Orioles,BAL,52190000,25,https://www.baseball-reference.com/leagues/majors/2020-misc.shtml,yes
+2020,Boston Red Sox,BOS,171984429,24,https://www.baseball-reference.com/leagues/majors/2020-misc.shtml,yes
+2020,Chicago Cubs,CHC,181560000,34,https://www.baseball-reference.com/leagues/majors/2020-misc.shtml,yes
+2020,Chicago White Sox,CHW,119066333,35,https://www.baseball-reference.com/leagues/majors/2020-misc.shtml,yes
+2020,Cincinnati Reds,CIN,120781165,31,https://www.baseball-reference.com/leagues/majors/2020-misc.shtml,yes
+2020,Cleveland Indians,CLE,101991668,35,https://www.baseball-reference.com/leagues/majors/2020-misc.shtml,yes
+2020,Colorado Rockies,COL,144730000,26,https://www.baseball-reference.com/leagues/majors/2020-misc.shtml,yes
+2020,Detroit Tigers,DET,88385000,23,https://www.baseball-reference.com/leagues/majors/2020-misc.shtml,yes
+2020,Houston Astros,HOU,217000000,29,https://www.baseball-reference.com/leagues/majors/2020-misc.shtml,yes
+2020,Kansas City Royals,KCR,68600000,26,https://www.baseball-reference.com/leagues/majors/2020-misc.shtml,yes
+2020,Los Angeles Angels,LAA,181254762,26,https://www.baseball-reference.com/leagues/majors/2020-misc.shtml,yes
+2020,Los Angeles Dodgers,LAD,216508333,43,https://www.baseball-reference.com/leagues/majors/2020-misc.shtml,yes
+2020,Miami Marlins,MIA,68450000,31,https://www.baseball-reference.com/leagues/majors/2020-misc.shtml,yes
+2020,Milwaukee Brewers,MIL,103541667,29,https://www.baseball-reference.com/leagues/majors/2020-misc.shtml,yes
+2020,Minnesota Twins,MIN,134838333,36,https://www.baseball-reference.com/leagues/majors/2020-misc.shtml,yes
+2020,New York Mets,NYM,162078667,26,https://www.baseball-reference.com/leagues/majors/2020-misc.shtml,yes
+2020,New York Yankees,NYY,218635714,33,https://www.baseball-reference.com/leagues/majors/2020-misc.shtml,yes
+2020,Oakland Athletics,OAK,85683333,36,https://www.baseball-reference.com/leagues/majors/2020-misc.shtml,yes
+2020,Philadelphia Phillies,PHI,170148461,28,https://www.baseball-reference.com/leagues/majors/2020-misc.shtml,yes
+2020,Pittsburgh Pirates,PIT,49628500,19,https://www.baseball-reference.com/leagues/majors/2020-misc.shtml,yes
+2020,San Diego Padres,SDP,141953667,37,https://www.baseball-reference.com/leagues/majors/2020-misc.shtml,yes
+2020,San Francisco Giants,SFG,152957778,29,https://www.baseball-reference.com/leagues/majors/2020-misc.shtml,yes
+2020,Seattle Mariners,SEA,92310000,27,https://www.baseball-reference.com/leagues/majors/2020-misc.shtml,yes
+2020,St. Louis Cardinals,STL,153396167,30,https://www.baseball-reference.com/leagues/majors/2020-misc.shtml,yes
+2020,Tampa Bay Rays,TBR,56351667,40,https://www.baseball-reference.com/leagues/majors/2020-misc.shtml,yes
+2020,Texas Rangers,TEX,122326667,22,https://www.baseball-reference.com/leagues/majors/2020-misc.shtml,yes
+2020,Toronto Blue Jays,TOR,76078572,32,https://www.baseball-reference.com/leagues/majors/2020-misc.shtml,yes
+2020,Washington Nationals,WSN,172237283,26,https://www.baseball-reference.com/leagues/majors/2020-misc.shtml,yes
+2021,Arizona Diamondbacks,ARI,77691667,52,https://www.baseball-reference.com/leagues/majors/2021-misc.shtml,yes
+2021,Atlanta Braves,ATL,127230000,88,https://www.baseball-reference.com/leagues/majors/2021-misc.shtml,yes
+2021,Baltimore Orioles,BAL,42075000,52,https://www.baseball-reference.com/leagues/majors/2021-misc.shtml,yes
+2021,Boston Red Sox,BOS,156095000,92,https://www.baseball-reference.com/leagues/majors/2021-misc.shtml,yes
+2021,Chicago Cubs,CHC,144413500,71,https://www.baseball-reference.com/leagues/majors/2021-misc.shtml,yes
+2021,Chicago White Sox,CHW,115546333,93,https://www.baseball-reference.com/leagues/majors/2021-misc.shtml,yes
+2021,Cincinnati Reds,CIN,116784881,83,https://www.baseball-reference.com/leagues/majors/2021-misc.shtml,yes
+2021,Cleveland Indians,CLE,50425500,80,https://www.baseball-reference.com/leagues/majors/2021-misc.shtml,yes
+2021,Colorado Rockies,COL,92675000,74,https://www.baseball-reference.com/leagues/majors/2021-misc.shtml,yes
+2021,Detroit Tigers,DET,78590500,77,https://www.baseball-reference.com/leagues/majors/2021-misc.shtml,yes
+2021,Houston Astros,HOU,190400000,95,https://www.baseball-reference.com/leagues/majors/2021-misc.shtml,yes
+2021,Kansas City Royals,KCR,86820000,74,https://www.baseball-reference.com/leagues/majors/2021-misc.shtml,yes
+2021,Los Angeles Angels,LAA,188408595,77,https://www.baseball-reference.com/leagues/majors/2021-misc.shtml,yes
+2021,Los Angeles Dodgers,LAD,248108334,106,https://www.baseball-reference.com/leagues/majors/2021-misc.shtml,yes
+2021,Miami Marlins,MIA,35150000,67,https://www.baseball-reference.com/leagues/majors/2021-misc.shtml,yes
+2021,Milwaukee Brewers,MIL,85517626,95,https://www.baseball-reference.com/leagues/majors/2021-misc.shtml,yes
+2021,Minnesota Twins,MIN,120158333,73,https://www.baseball-reference.com/leagues/majors/2021-misc.shtml,yes
+2021,New York Mets,NYM,184675167,77,https://www.baseball-reference.com/leagues/majors/2021-misc.shtml,yes
+2021,New York Yankees,NYY,209799047,92,https://www.baseball-reference.com/leagues/majors/2021-misc.shtml,yes
+2021,Oakland Athletics,OAK,94555834,86,https://www.baseball-reference.com/leagues/majors/2021-misc.shtml,yes
+2021,Philadelphia Phillies,PHI,185286962,82,https://www.baseball-reference.com/leagues/majors/2021-misc.shtml,yes
+2021,Pittsburgh Pirates,PIT,50255000,61,https://www.baseball-reference.com/leagues/majors/2021-misc.shtml,yes
+2021,San Diego Padres,SDP,154984286,79,https://www.baseball-reference.com/leagues/majors/2021-misc.shtml,yes
+2021,San Francisco Giants,SFG,150863778,107,https://www.baseball-reference.com/leagues/majors/2021-misc.shtml,yes
+2021,Seattle Mariners,SEA,64605500,90,https://www.baseball-reference.com/leagues/majors/2021-misc.shtml,yes
+2021,St. Louis Cardinals,STL,155329667,90,https://www.baseball-reference.com/leagues/majors/2021-misc.shtml,yes
+2021,Tampa Bay Rays,TBR,52937166,100,https://www.baseball-reference.com/leagues/majors/2021-misc.shtml,yes
+2021,Texas Rangers,TEX,67890999,60,https://www.baseball-reference.com/leagues/majors/2021-misc.shtml,yes
+2021,Toronto Blue Jays,TOR,121694071,91,https://www.baseball-reference.com/leagues/majors/2021-misc.shtml,yes
+2021,Washington Nationals,WSN,172370147,65,https://www.baseball-reference.com/leagues/majors/2021-misc.shtml,yes
+2022,Arizona Diamondbacks,ARI,78860000,74,https://www.baseball-reference.com/leagues/majors/2022-misc.shtml,yes
+2022,Atlanta Braves,ATL,181075000,101,https://www.baseball-reference.com/leagues/majors/2022-misc.shtml,yes
+2022,Baltimore Orioles,BAL,48000000,83,https://www.baseball-reference.com/leagues/majors/2022-misc.shtml,yes
+2022,Boston Red Sox,BOS,188420000,78,https://www.baseball-reference.com/leagues/majors/2022-misc.shtml,yes
+2022,Chicago Cubs,CHC,131085000,74,https://www.baseball-reference.com/leagues/majors/2022-misc.shtml,yes
+2022,Chicago White Sox,CHW,167458334,81,https://www.baseball-reference.com/leagues/majors/2022-misc.shtml,yes
+2022,Cincinnati Reds,CIN,111882381,62,https://www.baseball-reference.com/leagues/majors/2022-misc.shtml,yes
+2022,Cleveland Guardians,CLE,65960000,92,https://www.baseball-reference.com/leagues/majors/2022-misc.shtml,yes
+2022,Colorado Rockies,COL,112605000,68,https://www.baseball-reference.com/leagues/majors/2022-misc.shtml,yes
+2022,Detroit Tigers,DET,117740000,66,https://www.baseball-reference.com/leagues/majors/2022-misc.shtml,yes
+2022,Houston Astros,HOU,164789600,106,https://www.baseball-reference.com/leagues/majors/2022-misc.shtml,yes
+2022,Kansas City Royals,KCR,87410000,65,https://www.baseball-reference.com/leagues/majors/2022-misc.shtml,yes
+2022,Los Angeles Angels,LAA,167063095,73,https://www.baseball-reference.com/leagues/majors/2022-misc.shtml,yes
+2022,Los Angeles Dodgers,LAD,261180131,111,https://www.baseball-reference.com/leagues/majors/2022-misc.shtml,yes
+2022,Miami Marlins,MIA,68200000,69,https://www.baseball-reference.com/leagues/majors/2022-misc.shtml,yes
+2022,Milwaukee Brewers,MIL,128421127,86,https://www.baseball-reference.com/leagues/majors/2022-misc.shtml,yes
+2022,Minnesota Twins,MIN,110792857,78,https://www.baseball-reference.com/leagues/majors/2022-misc.shtml,yes
+2022,New York Mets,NYM,240473333,101,https://www.baseball-reference.com/leagues/majors/2022-misc.shtml,yes
+2022,New York Yankees,NYY,238950714,99,https://www.baseball-reference.com/leagues/majors/2022-misc.shtml,yes
+2022,Oakland Athletics,OAK,50248334,60,https://www.baseball-reference.com/leagues/majors/2022-misc.shtml,yes
+2022,Philadelphia Phillies,PHI,209488461,87,https://www.baseball-reference.com/leagues/majors/2022-misc.shtml,yes
+2022,Pittsburgh Pirates,PIT,37925000,62,https://www.baseball-reference.com/leagues/majors/2022-misc.shtml,yes
+2022,San Diego Padres,SDP,192600824,89,https://www.baseball-reference.com/leagues/majors/2022-misc.shtml,yes
+2022,San Francisco Giants,SFG,147929667,81,https://www.baseball-reference.com/leagues/majors/2022-misc.shtml,yes
+2022,Seattle Mariners,SEA,78285000,90,https://www.baseball-reference.com/leagues/majors/2022-misc.shtml,yes
+2022,St. Louis Cardinals,STL,156814666,93,https://www.baseball-reference.com/leagues/majors/2022-misc.shtml,yes
+2022,Tampa Bay Rays,TBR,73004211,86,https://www.baseball-reference.com/leagues/majors/2022-misc.shtml,yes
+2022,Texas Rangers,TEX,120176667,68,https://www.baseball-reference.com/leagues/majors/2022-misc.shtml,yes
+2022,Toronto Blue Jays,TOR,172705857,92,https://www.baseball-reference.com/leagues/majors/2022-misc.shtml,yes
+2022,Washington Nationals,WSN,125051666,55,https://www.baseball-reference.com/leagues/majors/2022-misc.shtml,yes
+2023,Arizona Diamondbacks,ARI,115247571,84,https://www.baseball-reference.com/leagues/majors/2023-misc.shtml,yes
+2023,Atlanta Braves,ATL,194197500,104,https://www.baseball-reference.com/leagues/majors/2023-misc.shtml,yes
+2023,Baltimore Orioles,BAL,82758114,101,https://www.baseball-reference.com/leagues/majors/2023-misc.shtml,yes
+2023,Boston Red Sox,BOS,181282500,78,https://www.baseball-reference.com/leagues/majors/2023-misc.shtml,yes
+2023,Chicago Cubs,CHC,162918250,83,https://www.baseball-reference.com/leagues/majors/2023-misc.shtml,yes
+2023,Chicago White Sox,CHW,140725951,61,https://www.baseball-reference.com/leagues/majors/2023-misc.shtml,yes
+2023,Cincinnati Reds,CIN,77877833,82,https://www.baseball-reference.com/leagues/majors/2023-misc.shtml,yes
+2023,Cleveland Guardians,CLE,70114729,76,https://www.baseball-reference.com/leagues/majors/2023-misc.shtml,yes
+2023,Colorado Rockies,COL,155645682,59,https://www.baseball-reference.com/leagues/majors/2023-misc.shtml,yes
+2023,Detroit Tigers,DET,119236836,78,https://www.baseball-reference.com/leagues/majors/2023-misc.shtml,yes
+2023,Houston Astros,HOU,240388766,90,https://www.baseball-reference.com/leagues/majors/2023-misc.shtml,yes
+2023,Kansas City Royals,KCR,88186975,56,https://www.baseball-reference.com/leagues/majors/2023-misc.shtml,yes
+2023,Los Angeles Angels,LAA,218537055,73,https://www.baseball-reference.com/leagues/majors/2023-misc.shtml,yes
+2023,Los Angeles Dodgers,LAD,227091667,100,https://www.baseball-reference.com/leagues/majors/2023-misc.shtml,yes
+2023,Miami Marlins,MIA,114351500,84,https://www.baseball-reference.com/leagues/majors/2023-misc.shtml,yes
+2023,Milwaukee Brewers,MIL,138288760,92,https://www.baseball-reference.com/leagues/majors/2023-misc.shtml,yes
+2023,Minnesota Twins,MIN,137798640,87,https://www.baseball-reference.com/leagues/majors/2023-misc.shtml,yes
+2023,New York Mets,NYM,208427344,75,https://www.baseball-reference.com/leagues/majors/2023-misc.shtml,yes
+2023,New York Yankees,NYY,259417008,82,https://www.baseball-reference.com/leagues/majors/2023-misc.shtml,yes
+2023,Oakland Athletics,OAK,51230000,50,https://www.baseball-reference.com/leagues/majors/2023-misc.shtml,yes
+2023,Philadelphia Phillies,PHI,241362606,90,https://www.baseball-reference.com/leagues/majors/2023-misc.shtml,yes
+2023,Pittsburgh Pirates,PIT,72407500,76,https://www.baseball-reference.com/leagues/majors/2023-misc.shtml,yes
+2023,San Diego Padres,SDP,236200139,82,https://www.baseball-reference.com/leagues/majors/2023-misc.shtml,yes
+2023,San Francisco Giants,SFG,177920416,79,https://www.baseball-reference.com/leagues/majors/2023-misc.shtml,yes
+2023,Seattle Mariners,SEA,128155663,88,https://www.baseball-reference.com/leagues/majors/2023-misc.shtml,yes
+2023,St. Louis Cardinals,STL,174086450,71,https://www.baseball-reference.com/leagues/majors/2023-misc.shtml,yes
+2023,Tampa Bay Rays,TBR,75441212,99,https://www.baseball-reference.com/leagues/majors/2023-misc.shtml,yes
+2023,Texas Rangers,TEX,248537867,90,https://www.baseball-reference.com/leagues/majors/2023-misc.shtml,yes
+2023,Toronto Blue Jays,TOR,211190269,89,https://www.baseball-reference.com/leagues/majors/2023-misc.shtml,yes
+2023,Washington Nationals,WSN,99211578,71,https://www.baseball-reference.com/leagues/majors/2023-misc.shtml,yes
+2024,Arizona Diamondbacks,ARI,161660152,89,https://www.baseball-reference.com/leagues/majors/2024-misc.shtml,yes
+2024,Atlanta Braves,ATL,241662300,89,https://www.baseball-reference.com/leagues/majors/2024-misc.shtml,yes
+2024,Baltimore Orioles,BAL,131181049,91,https://www.baseball-reference.com/leagues/majors/2024-misc.shtml,yes
+2024,Boston Red Sox,BOS,160834775,81,https://www.baseball-reference.com/leagues/majors/2024-misc.shtml,yes
+2024,Chicago Cubs,CHC,223048500,83,https://www.baseball-reference.com/leagues/majors/2024-misc.shtml,yes
+2024,Chicago White Sox,CHW,123336791,41,https://www.baseball-reference.com/leagues/majors/2024-misc.shtml,yes
+2024,Cincinnati Reds,CIN,98323334,77,https://www.baseball-reference.com/leagues/majors/2024-misc.shtml,yes
+2024,Cleveland Guardians,CLE,94230728,92,https://www.baseball-reference.com/leagues/majors/2024-misc.shtml,yes
+2024,Colorado Rockies,COL,147069963,61,https://www.baseball-reference.com/leagues/majors/2024-misc.shtml,yes
+2024,Detroit Tigers,DET,105584833,86,https://www.baseball-reference.com/leagues/majors/2024-misc.shtml,yes
+2024,Houston Astros,HOU,275678766,88,https://www.baseball-reference.com/leagues/majors/2024-misc.shtml,yes
+2024,Kansas City Royals,KCR,113442261,86,https://www.baseball-reference.com/leagues/majors/2024-misc.shtml,yes
+2024,Los Angeles Angels,LAA,165637050,63,https://www.baseball-reference.com/leagues/majors/2024-misc.shtml,yes
+2024,Los Angeles Dodgers,LAD,262386278,98,https://www.baseball-reference.com/leagues/majors/2024-misc.shtml,yes
+2024,Miami Marlins,MIA,109992600,62,https://www.baseball-reference.com/leagues/majors/2024-misc.shtml,yes
+2024,Milwaukee Brewers,MIL,115142460,93,https://www.baseball-reference.com/leagues/majors/2024-misc.shtml,yes
+2024,Minnesota Twins,MIN,135262591,82,https://www.baseball-reference.com/leagues/majors/2024-misc.shtml,yes
+2024,New York Mets,NYM,262702250,89,https://www.baseball-reference.com/leagues/majors/2024-misc.shtml,yes
+2024,New York Yankees,NYY,291463084,94,https://www.baseball-reference.com/leagues/majors/2024-misc.shtml,yes
+2024,Oakland Athletics,OAK,55690000,69,https://www.baseball-reference.com/leagues/majors/2024-misc.shtml,yes
+2024,Philadelphia Phillies,PHI,248632283,95,https://www.baseball-reference.com/leagues/majors/2024-misc.shtml,yes
+2024,Pittsburgh Pirates,PIT,97476500,76,https://www.baseball-reference.com/leagues/majors/2024-misc.shtml,yes
+2024,San Diego Padres,SDP,159391555,93,https://www.baseball-reference.com/leagues/majors/2024-misc.shtml,yes
+2024,San Francisco Giants,SFG,232370883,80,https://www.baseball-reference.com/leagues/majors/2024-misc.shtml,yes
+2024,Seattle Mariners,SEA,142547548,85,https://www.baseball-reference.com/leagues/majors/2024-misc.shtml,yes
+2024,St. Louis Cardinals,STL,189534400,83,https://www.baseball-reference.com/leagues/majors/2024-misc.shtml,yes
+2024,Tampa Bay Rays,TBR,128533112,80,https://www.baseball-reference.com/leagues/majors/2024-misc.shtml,yes
+2024,Texas Rangers,TEX,261471834,78,https://www.baseball-reference.com/leagues/majors/2024-misc.shtml,yes
+2024,Toronto Blue Jays,TOR,225628287,74,https://www.baseball-reference.com/leagues/majors/2024-misc.shtml,yes
+2024,Washington Nationals,WSN,132086867,71,https://www.baseball-reference.com/leagues/majors/2024-misc.shtml,yes
+2025,Arizona Diamondbacks,ARI,178806067,80,https://www.baseball-reference.com/leagues/majors/2025-misc.shtml,yes
+2025,Athletics,ATH,58178571,76,https://www.baseball-reference.com/leagues/majors/2025-misc.shtml,yes
+2025,Atlanta Braves,ATL,223005000,76,https://www.baseball-reference.com/leagues/majors/2025-misc.shtml,yes
+2025,Baltimore Orioles,BAL,138037000,75,https://www.baseball-reference.com/leagues/majors/2025-misc.shtml,yes
+2025,Boston Red Sox,BOS,166790967,89,https://www.baseball-reference.com/leagues/majors/2025-misc.shtml,yes
+2025,Chicago Cubs,CHC,169675000,92,https://www.baseball-reference.com/leagues/majors/2025-misc.shtml,yes
+2025,Chicago White Sox,CHW,63430000,60,https://www.baseball-reference.com/leagues/majors/2025-misc.shtml,yes
+2025,Cincinnati Reds,CIN,110815833,83,https://www.baseball-reference.com/leagues/majors/2025-misc.shtml,yes
+2025,Cleveland Guardians,CLE,88787000,88,https://www.baseball-reference.com/leagues/majors/2025-misc.shtml,yes
+2025,Colorado Rockies,COL,104724285,43,https://www.baseball-reference.com/leagues/majors/2025-misc.shtml,yes
+2025,Detroit Tigers,DET,132893334,87,https://www.baseball-reference.com/leagues/majors/2025-misc.shtml,yes
+2025,Houston Astros,HOU,204583333,87,https://www.baseball-reference.com/leagues/majors/2025-misc.shtml,yes
+2025,Kansas City Royals,KCR,110574444,82,https://www.baseball-reference.com/leagues/majors/2025-misc.shtml,yes
+2025,Los Angeles Angels,LAA,172808094,72,https://www.baseball-reference.com/leagues/majors/2025-misc.shtml,yes
+2025,Los Angeles Dodgers,LAD,338188810,93,https://www.baseball-reference.com/leagues/majors/2025-misc.shtml,yes
+2025,Miami Marlins,MIA,,79,https://www.baseball-reference.com/leagues/majors/2025-misc.shtml,yes
+2025,Milwaukee Brewers,MIL,97448000,97,https://www.baseball-reference.com/leagues/majors/2025-misc.shtml,yes
+2025,Minnesota Twins,MIN,135561190,70,https://www.baseball-reference.com/leagues/majors/2025-misc.shtml,yes
+2025,New York Mets,NYM,314450000,83,https://www.baseball-reference.com/leagues/majors/2025-misc.shtml,yes
+2025,New York Yankees,NYY,265827533,94,https://www.baseball-reference.com/leagues/majors/2025-misc.shtml,yes
+2025,Philadelphia Phillies,PHI,258674285,96,https://www.baseball-reference.com/leagues/majors/2025-misc.shtml,yes
+2025,Pittsburgh Pirates,PIT,69783500,71,https://www.baseball-reference.com/leagues/majors/2025-misc.shtml,yes
+2025,San Diego Padres,SDP,208104954,90,https://www.baseball-reference.com/leagues/majors/2025-misc.shtml,yes
+2025,San Francisco Giants,SFG,189052858,81,https://www.baseball-reference.com/leagues/majors/2025-misc.shtml,yes
+2025,Seattle Mariners,SEA,144980714,90,https://www.baseball-reference.com/leagues/majors/2025-misc.shtml,yes
+2025,St. Louis Cardinals,STL,127965000,78,https://www.baseball-reference.com/leagues/majors/2025-misc.shtml,yes
+2025,Tampa Bay Rays,TBR,90516213,77,https://www.baseball-reference.com/leagues/majors/2025-misc.shtml,yes
+2025,Texas Rangers,TEX,208110000,81,https://www.baseball-reference.com/leagues/majors/2025-misc.shtml,yes
+2025,Toronto Blue Jays,TOR,242062381,94,https://www.baseball-reference.com/leagues/majors/2025-misc.shtml,yes
+2025,Washington Nationals,WSN,100160060,66,https://www.baseball-reference.com/leagues/majors/2025-misc.shtml,yes
+2026,Arizona Diamondbacks,ARI,205921284,86,https://www.baseball-reference.com/leagues/majors/2026-misc.shtml,yes
+2026,Athletics,ATH,77427857,64,https://www.baseball-reference.com/leagues/majors/2026-misc.shtml,yes
+2026,Atlanta Braves,ATL,275725000,94,https://www.baseball-reference.com/leagues/majors/2026-misc.shtml,yes
+2026,Baltimore Orioles,BAL,114287000,79,https://www.baseball-reference.com/leagues/majors/2026-misc.shtml,yes
+2026,Boston Red Sox,BOS,237693334,87,https://www.baseball-reference.com/leagues/majors/2026-misc.shtml,yes
+2026,Chicago Cubs,CHC,241411079,89,https://www.baseball-reference.com/leagues/majors/2026-misc.shtml,yes
+2026,Chicago White Sox,CHW,78630000,84,https://www.baseball-reference.com/leagues/majors/2026-misc.shtml,yes
+2026,Cincinnati Reds,CIN,109118333,75,https://www.baseball-reference.com/leagues/majors/2026-misc.shtml,yes
+2026,Cleveland Guardians,CLE,75256711,85,https://www.baseball-reference.com/leagues/majors/2026-misc.shtml,yes
+2026,Colorado Rockies,COL,87189286,58,https://www.baseball-reference.com/leagues/majors/2026-misc.shtml,yes
+2026,Detroit Tigers,DET,144281859,76,https://www.baseball-reference.com/leagues/majors/2026-misc.shtml,yes
+2026,Houston Astros,HOU,210361666,81,https://www.baseball-reference.com/leagues/majors/2026-misc.shtml,yes
+2026,Kansas City Royals,KCR,102364445,69,https://www.baseball-reference.com/leagues/majors/2026-misc.shtml,yes
+2026,Los Angeles Angels,LAA,136988096,62,https://www.baseball-reference.com/leagues/majors/2026-misc.shtml,yes
+2026,Los Angeles Dodgers,LAD,368699449,100,https://www.baseball-reference.com/leagues/majors/2026-misc.shtml,yes
+2026,Miami Marlins,MIA,50190000,80,https://www.baseball-reference.com/leagues/majors/2026-misc.shtml,yes
+2026,Milwaukee Brewers,MIL,146580000,103,https://www.baseball-reference.com/leagues/majors/2026-misc.shtml,yes
+2026,Minnesota Twins,MIN,100684523,77,https://www.baseball-reference.com/leagues/majors/2026-misc.shtml,yes
+2026,New York Mets,NYM,267817634,74,https://www.baseball-reference.com/leagues/majors/2026-misc.shtml,yes
+2026,New York Yankees,NYY,284070833,93,https://www.baseball-reference.com/leagues/majors/2026-misc.shtml,yes
+2026,Philadelphia Phillies,PHI,257217617,88,https://www.baseball-reference.com/leagues/majors/2026-misc.shtml,yes
+2026,Pittsburgh Pirates,PIT,95694833,82,https://www.baseball-reference.com/leagues/majors/2026-misc.shtml,yes
+2026,San Diego Padres,SDP,244246082,91,https://www.baseball-reference.com/leagues/majors/2026-misc.shtml,yes
+2026,San Francisco Giants,SFG,152362856,65,https://www.baseball-reference.com/leagues/majors/2026-misc.shtml,yes
+2026,Seattle Mariners,SEA,142791880,76,https://www.baseball-reference.com/leagues/majors/2026-misc.shtml,yes
+2026,St. Louis Cardinals,STL,,77,https://www.baseball-reference.com/leagues/majors/2026-misc.shtml,yes
+2026,Tampa Bay Rays,TBR,79339545,98,https://www.baseball-reference.com/leagues/majors/2026-misc.shtml,yes
+2026,Texas Rangers,TEX,181925000,80,https://www.baseball-reference.com/leagues/majors/2026-misc.shtml,yes
+2026,Toronto Blue Jays,TOR,221400344,79,https://www.baseball-reference.com/leagues/majors/2026-misc.shtml,yes
+2026,Washington Nationals,WSN,63662500,77,https://www.baseball-reference.com/leagues/majors/2026-misc.shtml,yes

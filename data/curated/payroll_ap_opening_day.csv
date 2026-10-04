@@ -1,0 +1,91 @@
+season,team,team_abbr,payroll_usd,wins,source_url,verified,note
+2023,Arizona Diamondbacks,ARI,117251292,84,https://worldbaseball.com/news/baseball-payrolls-2024-vs-2023,yes,AP Opening Day exact
+2023,Atlanta Braves,ATL,197332500,104,https://worldbaseball.com/news/baseball-payrolls-2024-vs-2023,yes,AP Opening Day exact
+2023,Baltimore Orioles,BAL,60422300,101,https://worldbaseball.com/news/baseball-payrolls-2024-vs-2023,yes,AP Opening Day exact
+2023,Boston Red Sox,BOS,190556279,78,https://worldbaseball.com/news/baseball-payrolls-2024-vs-2023,yes,AP Opening Day exact
+2023,Chicago Cubs,CHC,179168250,83,https://worldbaseball.com/news/baseball-payrolls-2024-vs-2023,yes,AP Opening Day exact
+2023,Chicago White Sox,CHW,189158667,61,https://worldbaseball.com/news/baseball-payrolls-2024-vs-2023,yes,AP Opening Day exact
+2023,Cincinnati Reds,CIN,84175714,82,https://worldbaseball.com/news/baseball-payrolls-2024-vs-2023,yes,AP Opening Day exact
+2023,Cleveland Guardians,CLE,89824629,76,https://worldbaseball.com/news/baseball-payrolls-2024-vs-2023,yes,AP Opening Day exact
+2023,Colorado Rockies,COL,176008778,59,https://worldbaseball.com/news/baseball-payrolls-2024-vs-2023,yes,AP Opening Day exact
+2023,Detroit Tigers,DET,123500500,78,https://worldbaseball.com/news/baseball-payrolls-2024-vs-2023,yes,AP Opening Day exact
+2023,Houston Astros,HOU,192767233,90,https://worldbaseball.com/news/baseball-payrolls-2024-vs-2023,yes,AP Opening Day exact
+2023,Kansas City Royals,KCR,90118100,56,https://worldbaseball.com/news/baseball-payrolls-2024-vs-2023,yes,AP Opening Day exact
+2023,Los Angeles Angels,LAA,212228095,73,https://worldbaseball.com/news/baseball-payrolls-2024-vs-2023,yes,AP Opening Day exact
+2023,Los Angeles Dodgers,LAD,221759500,100,https://worldbaseball.com/news/baseball-payrolls-2024-vs-2023,yes,AP Opening Day exact
+2023,Miami Marlins,MIA,91975000,84,https://worldbaseball.com/news/baseball-payrolls-2024-vs-2023,yes,AP Opening Day exact
+2023,Milwaukee Brewers,MIL,116351987,92,https://worldbaseball.com/news/baseball-payrolls-2024-vs-2023,yes,AP Opening Day exact
+2023,Minnesota Twins,MIN,156488740,87,https://worldbaseball.com/news/baseball-payrolls-2024-vs-2023,yes,AP Opening Day exact
+2023,New York Mets,NYM,355436854,75,https://worldbaseball.com/news/baseball-payrolls-2024-vs-2023,yes,AP Opening Day exact
+2023,New York Yankees,NYY,275249873,82,https://worldbaseball.com/news/baseball-payrolls-2024-vs-2023,yes,AP Opening Day exact
+2023,Oakland Athletics,OAK,57795000,50,https://worldbaseball.com/news/baseball-payrolls-2024-vs-2023,yes,AP Opening Day exact
+2023,Philadelphia Phillies,PHI,236260439,90,https://worldbaseball.com/news/baseball-payrolls-2024-vs-2023,yes,AP Opening Day exact
+2023,Pittsburgh Pirates,PIT,71652500,76,https://worldbaseball.com/news/baseball-payrolls-2024-vs-2023,yes,AP Opening Day exact
+2023,San Diego Padres,SDP,257610217,82,https://worldbaseball.com/news/baseball-payrolls-2024-vs-2023,yes,AP Opening Day exact
+2023,San Francisco Giants,SFG,193482500,79,https://worldbaseball.com/news/baseball-payrolls-2024-vs-2023,yes,AP Opening Day exact
+2023,Seattle Mariners,SEA,130969948,88,https://worldbaseball.com/news/baseball-payrolls-2024-vs-2023,yes,AP Opening Day exact
+2023,St. Louis Cardinals,STL,152712308,71,https://worldbaseball.com/news/baseball-payrolls-2024-vs-2023,yes,AP Opening Day exact
+2023,Tampa Bay Rays,TBR,75209811,99,https://worldbaseball.com/news/baseball-payrolls-2024-vs-2023,yes,AP Opening Day exact
+2023,Texas Rangers,TEX,199569490,90,https://worldbaseball.com/news/baseball-payrolls-2024-vs-2023,yes,AP Opening Day exact
+2023,Toronto Blue Jays,TOR,210367554,89,https://worldbaseball.com/news/baseball-payrolls-2024-vs-2023,yes,AP Opening Day exact
+2023,Washington Nationals,WSN,101540153,71,https://worldbaseball.com/news/baseball-payrolls-2024-vs-2023,yes,AP Opening Day exact
+2024,Arizona Diamondbacks,ARI,140725700,89,https://worldbaseball.com/news/baseball-payrolls-2024-vs-2023,yes,AP Opening Day exact
+2024,Atlanta Braves,ATL,217490000,89,https://worldbaseball.com/news/baseball-payrolls-2024-vs-2023,yes,AP Opening Day exact
+2024,Baltimore Orioles,BAL,93777700,91,https://worldbaseball.com/news/baseball-payrolls-2024-vs-2023,yes,AP Opening Day exact
+2024,Boston Red Sox,BOS,175993748,81,https://worldbaseball.com/news/baseball-payrolls-2024-vs-2023,yes,AP Opening Day exact
+2024,Chicago Cubs,CHC,217280500,83,https://worldbaseball.com/news/baseball-payrolls-2024-vs-2023,yes,AP Opening Day exact
+2024,Chicago White Sox,CHW,141755550,41,https://worldbaseball.com/news/baseball-payrolls-2024-vs-2023,yes,AP Opening Day exact
+2024,Cincinnati Reds,CIN,103701547,77,https://worldbaseball.com/news/baseball-payrolls-2024-vs-2023,yes,AP Opening Day exact
+2024,Cleveland Guardians,CLE,93833629,92,https://worldbaseball.com/news/baseball-payrolls-2024-vs-2023,yes,AP Opening Day exact
+2024,Colorado Rockies,COL,142885286,61,https://worldbaseball.com/news/baseball-payrolls-2024-vs-2023,yes,AP Opening Day exact
+2024,Detroit Tigers,DET,103934833,86,https://worldbaseball.com/news/baseball-payrolls-2024-vs-2023,yes,AP Opening Day exact
+2024,Houston Astros,HOU,236524482,88,https://worldbaseball.com/news/baseball-payrolls-2024-vs-2023,yes,AP Opening Day exact
+2024,Kansas City Royals,KCR,115257261,86,https://worldbaseball.com/news/baseball-payrolls-2024-vs-2023,yes,AP Opening Day exact
+2024,Los Angeles Angels,LAA,163493095,63,https://worldbaseball.com/news/baseball-payrolls-2024-vs-2023,yes,AP Opening Day exact
+2024,Los Angeles Dodgers,LAD,250078916,98,https://worldbaseball.com/news/baseball-payrolls-2024-vs-2023,yes,AP Opening Day exact
+2024,Miami Marlins,MIA,96574400,62,https://worldbaseball.com/news/baseball-payrolls-2024-vs-2023,yes,AP Opening Day exact
+2024,Milwaukee Brewers,MIL,104591794,93,https://worldbaseball.com/news/baseball-payrolls-2024-vs-2023,yes,AP Opening Day exact
+2024,Minnesota Twins,MIN,124817590,82,https://worldbaseball.com/news/baseball-payrolls-2024-vs-2023,yes,AP Opening Day exact
+2024,New York Mets,NYM,305842016,89,https://worldbaseball.com/news/baseball-payrolls-2024-vs-2023,yes,AP Opening Day exact
+2024,New York Yankees,NYY,303322047,94,https://worldbaseball.com/news/baseball-payrolls-2024-vs-2023,yes,AP Opening Day exact
+2024,Oakland Athletics,OAK,61293298,69,https://worldbaseball.com/news/baseball-payrolls-2024-vs-2023,yes,AP Opening Day exact
+2024,Philadelphia Phillies,PHI,243476617,95,https://worldbaseball.com/news/baseball-payrolls-2024-vs-2023,yes,AP Opening Day exact
+2024,Pittsburgh Pirates,PIT,85466500,76,https://worldbaseball.com/news/baseball-payrolls-2024-vs-2023,yes,AP Opening Day exact
+2024,San Diego Padres,SDP,161937555,93,https://worldbaseball.com/news/baseball-payrolls-2024-vs-2023,yes,AP Opening Day exact
+2024,San Francisco Giants,SFG,212094828,80,https://worldbaseball.com/news/baseball-payrolls-2024-vs-2023,yes,AP Opening Day exact
+2024,Seattle Mariners,SEA,135738648,85,https://worldbaseball.com/news/baseball-payrolls-2024-vs-2023,yes,AP Opening Day exact
+2024,St. Louis Cardinals,STL,173053567,83,https://worldbaseball.com/news/baseball-payrolls-2024-vs-2023,yes,AP Opening Day exact
+2024,Tampa Bay Rays,TBR,98873112,80,https://worldbaseball.com/news/baseball-payrolls-2024-vs-2023,yes,AP Opening Day exact
+2024,Texas Rangers,TEX,223355753,78,https://worldbaseball.com/news/baseball-payrolls-2024-vs-2023,yes,AP Opening Day exact
+2024,Toronto Blue Jays,TOR,221862600,74,https://worldbaseball.com/news/baseball-payrolls-2024-vs-2023,yes,AP Opening Day exact
+2024,Washington Nationals,WSN,124862600,71,https://worldbaseball.com/news/baseball-payrolls-2024-vs-2023,yes,AP Opening Day exact
+2026,Arizona Diamondbacks,ARI,185500000,86,https://legionreport.com/highest-mlb-payrolls/,yes,"AP Opening Day, rounded to 0.1M in source (deferred pay at present value)"
+2026,Athletics,ATH,89800000,64,https://legionreport.com/highest-mlb-payrolls/,yes,"AP Opening Day, rounded to 0.1M in source (deferred pay at present value)"
+2026,Atlanta Braves,ATL,252200000,94,https://legionreport.com/highest-mlb-payrolls/,yes,"AP Opening Day, rounded to 0.1M in source (deferred pay at present value)"
+2026,Baltimore Orioles,BAL,161200000,79,https://legionreport.com/highest-mlb-payrolls/,yes,"AP Opening Day, rounded to 0.1M in source (deferred pay at present value)"
+2026,Boston Red Sox,BOS,194500000,87,https://legionreport.com/highest-mlb-payrolls/,yes,"AP Opening Day, rounded to 0.1M in source (deferred pay at present value)"
+2026,Chicago Cubs,CHC,222800000,89,https://legionreport.com/highest-mlb-payrolls/,yes,"AP Opening Day, rounded to 0.1M in source (deferred pay at present value)"
+2026,Chicago White Sox,CHW,82100000,84,https://legionreport.com/highest-mlb-payrolls/,yes,"AP Opening Day, rounded to 0.1M in source (deferred pay at present value)"
+2026,Cincinnati Reds,CIN,122600000,75,https://legionreport.com/highest-mlb-payrolls/,yes,"AP Opening Day, rounded to 0.1M in source (deferred pay at present value)"
+2026,Cleveland Guardians,CLE,62300000,85,https://legionreport.com/highest-mlb-payrolls/,yes,"AP Opening Day, rounded to 0.1M in source (deferred pay at present value)"
+2026,Colorado Rockies,COL,116700000,58,https://legionreport.com/highest-mlb-payrolls/,yes,"AP Opening Day, rounded to 0.1M in source (deferred pay at present value)"
+2026,Detroit Tigers,DET,206700000,76,https://legionreport.com/highest-mlb-payrolls/,yes,"AP Opening Day, rounded to 0.1M in source (deferred pay at present value)"
+2026,Houston Astros,HOU,244300000,81,https://legionreport.com/highest-mlb-payrolls/,yes,"AP Opening Day, rounded to 0.1M in source (deferred pay at present value)"
+2026,Kansas City Royals,KCR,142800000,69,https://legionreport.com/highest-mlb-payrolls/,yes,"AP Opening Day, rounded to 0.1M in source (deferred pay at present value)"
+2026,Los Angeles Angels,LAA,177600000,62,https://legionreport.com/highest-mlb-payrolls/,yes,"AP Opening Day, rounded to 0.1M in source (deferred pay at present value)"
+2026,Los Angeles Dodgers,LAD,316600000,100,https://legionreport.com/highest-mlb-payrolls/,yes,"AP Opening Day, rounded to 0.1M in source (deferred pay at present value)"
+2026,Miami Marlins,MIA,76200000,80,https://legionreport.com/highest-mlb-payrolls/,yes,"AP Opening Day, rounded to 0.1M in source (deferred pay at present value)"
+2026,Milwaukee Brewers,MIL,124100000,103,https://legionreport.com/highest-mlb-payrolls/,yes,"AP Opening Day, rounded to 0.1M in source (deferred pay at present value)"
+2026,Minnesota Twins,MIN,96500000,77,https://legionreport.com/highest-mlb-payrolls/,yes,"AP Opening Day, rounded to 0.1M in source (deferred pay at present value)"
+2026,New York Mets,NYM,352200000,74,https://legionreport.com/highest-mlb-payrolls/,yes,"AP Opening Day, rounded to 0.1M in source (deferred pay at present value)"
+2026,New York Yankees,NYY,297200000,93,https://legionreport.com/highest-mlb-payrolls/,yes,"AP Opening Day, rounded to 0.1M in source (deferred pay at present value)"
+2026,Philadelphia Phillies,PHI,282000000,88,https://legionreport.com/highest-mlb-payrolls/,yes,"AP Opening Day, rounded to 0.1M in source (deferred pay at present value)"
+2026,Pittsburgh Pirates,PIT,99900000,82,https://legionreport.com/highest-mlb-payrolls/,yes,"AP Opening Day, rounded to 0.1M in source (deferred pay at present value)"
+2026,San Diego Padres,SDP,208300000,91,https://legionreport.com/highest-mlb-payrolls/,yes,"AP Opening Day, rounded to 0.1M in source (deferred pay at present value)"
+2026,San Francisco Giants,SFG,195600000,65,https://legionreport.com/highest-mlb-payrolls/,yes,"AP Opening Day, rounded to 0.1M in source (deferred pay at present value)"
+2026,Seattle Mariners,SEA,160500000,76,https://legionreport.com/highest-mlb-payrolls/,yes,"AP Opening Day, rounded to 0.1M in source (deferred pay at present value)"
+2026,St. Louis Cardinals,STL,100400000,77,https://legionreport.com/highest-mlb-payrolls/,yes,"AP Opening Day, rounded to 0.1M in source (deferred pay at present value)"
+2026,Tampa Bay Rays,TBR,88700000,98,https://legionreport.com/highest-mlb-payrolls/,yes,"AP Opening Day, rounded to 0.1M in source (deferred pay at present value)"
+2026,Texas Rangers,TEX,180200000,80,https://legionreport.com/highest-mlb-payrolls/,yes,"AP Opening Day, rounded to 0.1M in source (deferred pay at present value)"
+2026,Toronto Blue Jays,TOR,269000000,79,https://legionreport.com/highest-mlb-payrolls/,yes,"AP Opening Day, rounded to 0.1M in source (deferred pay at present value)"
+2026,Washington Nationals,WSN,83900000,77,https://legionreport.com/highest-mlb-payrolls/,yes,"AP Opening Day, rounded to 0.1M in source (deferred pay at present value)"

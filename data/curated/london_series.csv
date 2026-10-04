@@ -1,0 +1,11 @@
+year,game,matchup,attendance,status,source_url,verified
+2019,1,New York Yankees 17 - Boston Red Sox 13,59659,played,https://en.wikipedia.org/wiki/MLB_London_Series,yes
+2019,2,New York Yankees 12 - Boston Red Sox 8,59059,played,https://en.wikipedia.org/wiki/MLB_London_Series,yes
+2020,1,Chicago Cubs vs St. Louis Cardinals,,cancelled (COVID-19),https://en.wikipedia.org/wiki/MLB_London_Series,yes
+2020,2,Chicago Cubs vs St. Louis Cardinals,,cancelled (COVID-19),https://en.wikipedia.org/wiki/MLB_London_Series,yes
+2023,1,Chicago Cubs 9 - St. Louis Cardinals 1,54662,played,https://en.wikipedia.org/wiki/MLB_London_Series,yes
+2023,2,St. Louis Cardinals 7 - Chicago Cubs 5,55565,played,https://en.wikipedia.org/wiki/MLB_London_Series,yes
+2024,1,Philadelphia Phillies 7 - New York Mets 2,53882,played,https://en.wikipedia.org/wiki/MLB_London_Series,yes
+2024,2,New York Mets 6 - Philadelphia Phillies 5,55074,played,https://en.wikipedia.org/wiki/MLB_London_Series,yes
+2026,1,New York Yankees vs Toronto Blue Jays,,cancelled (scheduling: London Stadium / FIFA World Cup broadcast),https://en.wikipedia.org/wiki/MLB_London_Series,yes
+2026,2,New York Yankees vs Toronto Blue Jays,,cancelled (scheduling: London Stadium / FIFA World Cup broadcast),https://en.wikipedia.org/wiki/MLB_London_Series,yes

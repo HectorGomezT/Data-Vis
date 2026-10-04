@@ -1,0 +1,61 @@
+league,country,continent,season,teams,games,attendance_total,attendance_per_game,note,source_url,verified
+MLB,United States,Norteamérica,2015,30,,73760020,30517,regular season,https://www.thescore.com/mlb/news/3357226/major-league-baseball-attendance-1980-2025,yes
+MLB,United States,Norteamérica,2016,30,,73159044,30169,regular season,https://www.thescore.com/mlb/news/3357226/major-league-baseball-attendance-1980-2025,yes
+MLB,United States,Norteamérica,2017,30,,72670423,30042,regular season,https://www.thescore.com/mlb/news/3357226/major-league-baseball-attendance-1980-2025,yes
+MLB,United States,Norteamérica,2018,30,,69625244,28830,regular season,https://www.thescore.com/mlb/news/3357226/major-league-baseball-attendance-1980-2025,yes
+MLB,United States,Norteamérica,2019,30,,68494752,28339,regular season,https://www.thescore.com/mlb/news/3357226/major-league-baseball-attendance-1980-2025,yes
+MLB,United States,Norteamérica,2020,30,,0,,COVID-19: 60-game season played without fans,https://www.thescore.com/mlb/news/3357226/major-league-baseball-attendance-1980-2025,yes
+MLB,United States,Norteamérica,2021,30,,45304709,18901,pandemic capacity restrictions,https://www.thescore.com/mlb/news/3357226/major-league-baseball-attendance-1980-2025,yes
+MLB,United States,Norteamérica,2022,30,,64556636,26843,regular season,https://www.thescore.com/mlb/news/3357226/major-league-baseball-attendance-1980-2025,yes
+MLB,United States,Norteamérica,2023,30,,70747365,29295,regular season,https://www.thescore.com/mlb/news/3357226/major-league-baseball-attendance-1980-2025,yes
+MLB,United States,Norteamérica,2024,30,,71348366,29568,regular season,https://www.thescore.com/mlb/news/3357226/major-league-baseball-attendance-1980-2025,yes
+MLB,United States,Norteamérica,2025,30,2423,71409421,29471,regular season; games = gates (search snippet),https://www.thescore.com/mlb/news/3357226/major-league-baseball-attendance-1980-2025,yes
+MLB,United States,Norteamérica,2026,30,,71750000,29540,"final regular season; total reported rounded as 71.75 million; TicketNews gives 29,589 avg over 2,425 dates",https://frontofficesports.com/article/mlb-attendance-fourth-straight-year/,yes
+NPB,Japan,Asia,2015,12,858,24236920,28248,"regular season; CL 13,510,900 confirmed on npb.jp, PL 10,726,020 from search snippet",https://npb.jp/news/detail/20151007_01.html,search
+NPB,Japan,Asia,2016,12,858,24981514,29116,regular season,https://npb.jp/statistics/2016/attendance.html,yes
+NPB,Japan,Asia,2017,12,858,25139463,29300,regular season,https://npb.jp/statistics/2017/attendance.html,yes
+NPB,Japan,Asia,2018,12,858,25550719,29779,regular season,https://npb.jp/statistics/2018/attendance.html,yes
+NPB,Japan,Asia,2019,12,858,26536962,30929,regular season,https://npb.jp/statistics/2019/attendance.html,yes
+NPB,Japan,Asia,2020,12,720,4823578,6699,COVID-19: 120-game season with capacity limits,https://npb.jp/statistics/2020/attendance.html,yes
+NPB,Japan,Asia,2021,12,858,7840773,9138,COVID-19 capacity limits,https://npb.jp/statistics/2021/attendance.html,yes
+NPB,Japan,Asia,2022,12,858,21071180,24558,regular season,https://npb.jp/statistics/2022/attendance.html,yes
+NPB,Japan,Asia,2023,12,858,25070169,29219,regular season,https://npb.jp/statistics/2023/attendance.html,yes
+NPB,Japan,Asia,2024,12,858,26681715,31098,regular season,https://npb.jp/statistics/2024/attendance.html,yes
+NPB,Japan,Asia,2025,12,858,27040286,31515,regular season (record),https://npb.jp/statistics/2025/attendance.html,yes
+NPB,Japan,Asia,2026,12,849,26899620,31684,partial: as of 2026-10-03 (849 of 858 games),https://npb.jp/statistics/2026/attendance.html,yes
+KBO,South Korea,Asia,2015,10,720,7360530,10223,regular season,https://ko.wikipedia.org/wiki/KBO_리그,yes
+KBO,South Korea,Asia,2016,10,720,8339577,11583,regular season,https://ko.wikipedia.org/wiki/KBO_리그,yes
+KBO,South Korea,Asia,2017,10,720,8400688,11668,regular season,https://ko.wikipedia.org/wiki/KBO_리그,yes
+KBO,South Korea,Asia,2018,10,720,8073742,11214,regular season,https://ko.wikipedia.org/wiki/KBO_리그,yes
+KBO,South Korea,Asia,2019,10,720,7286008,10119,regular season,https://ko.wikipedia.org/wiki/KBO_리그,yes
+KBO,South Korea,Asia,2020,10,720,328317,456,COVID-19: most games behind closed doors,https://ko.wikipedia.org/wiki/KBO_리그,yes
+KBO,South Korea,Asia,2021,10,720,1228489,1706,COVID-19 capacity limits,https://ko.wikipedia.org/wiki/KBO_리그,yes
+KBO,South Korea,Asia,2022,10,720,6076074,8439,regular season,https://ko.wikipedia.org/wiki/KBO_리그,yes
+KBO,South Korea,Asia,2023,10,720,8100326,11250,regular season,https://ko.wikipedia.org/wiki/KBO_리그,yes
+KBO,South Korea,Asia,2024,10,720,10887705,15122,regular season; first 10 million season,https://ko.wikipedia.org/wiki/KBO_리그,yes
+KBO,South Korea,Asia,2025,10,720,12312519,17100,regular season (record),https://ko.wikipedia.org/wiki/KBO_리그,yes
+KBO,South Korea,Asia,2026,10,684,12069596,17646,partial: as of 2026-10-01 (684 of 720 games); en.wikipedia infobox shows stale 8085395,https://www.newsis.com/view/NISX20261001_0003811595,yes
+CPBL,Taiwan,Asia,2015,4,240,1327639,5532,regular season,https://zh.wikipedia.org/zh-tw/中華職業棒球大聯盟,yes
+CPBL,Taiwan,Asia,2016,4,240,1409312,5872,regular season,https://zh.wikipedia.org/zh-tw/中華職業棒球大聯盟,yes
+CPBL,Taiwan,Asia,2017,4,240,1318275,5493,regular season,https://zh.wikipedia.org/zh-tw/中華職業棒球大聯盟,yes
+CPBL,Taiwan,Asia,2018,4,240,1309879,5458,regular season,https://zh.wikipedia.org/zh-tw/中華職業棒球大聯盟,yes
+CPBL,Taiwan,Asia,2019,4,240,1398243,5826,regular season,https://zh.wikipedia.org/zh-tw/中華職業棒球大聯盟,yes
+CPBL,Taiwan,Asia,2020,4,207,857435,4142,COVID-19: 33 closed-door games excluded from game count (240 played),https://zh.wikipedia.org/zh-tw/中華職業棒球大聯盟,yes
+CPBL,Taiwan,Asia,2021,5,262,954087,3642,COVID-19: 38 closed-door games excluded; Wei Chuan Dragons return,https://zh.wikipedia.org/zh-tw/中華職業棒球大聯盟,yes
+CPBL,Taiwan,Asia,2022,5,300,1471197,4904,regular season,https://zh.wikipedia.org/zh-tw/中華職業棒球大聯盟,yes
+CPBL,Taiwan,Asia,2023,5,300,1800130,6000,regular season,https://zh.wikipedia.org/zh-tw/中華職業棒球大聯盟,yes
+CPBL,Taiwan,Asia,2024,6,360,2766386,7684,regular season; TSG Hawks join,https://zh.wikipedia.org/zh-tw/中華職業棒球大聯盟,yes
+CPBL,Taiwan,Asia,2025,6,360,3734429,10373,regular season (record),https://zh.wikipedia.org/zh-tw/中華職業棒球大聯盟,yes
+CPBL,Taiwan,Asia,2026,6,355,3850176,10845,partial/unofficial fan-compiled tally (355 of 360 games) as of 2026-10-04,https://zxc22.idv.tw/history.asp?clickflag=999,yes
+LMB,Mexico,Norteamérica,2015,16,,4630254,,includes playoffs and Serie del Rey,https://es.wikipedia.org/wiki/Liga_Mexicana_de_Béisbol_2015,yes
+LMB,Mexico,Norteamérica,2016,16,,4649420,,includes playoffs and Serie del Rey,https://es.wikipedia.org/wiki/Liga_Mexicana_de_Béisbol_2016,yes
+LMB,Mexico,Norteamérica,2017,16,,,,reported only as over 4 million,https://www.mediotiempo.com/liga-mexicana-de-beisbol/2019-supera-asistencia-2018-cuatro-millones-aficionados-lmb-beisbol,no
+LMB,Mexico,Norteamérica,2018,16,,3835044,,regular season of two short tournaments (Primavera + Otoño),https://www.mediotiempo.com/liga-mexicana-de-beisbol/2019-supera-asistencia-2018-cuatro-millones-aficionados-lmb-beisbol,search
+LMB,Mexico,Norteamérica,2019,16,,4603163,,regular season,https://www.mediotiempo.com/liga-mexicana-de-beisbol/2019-supera-asistencia-2018-cuatro-millones-aficionados-lmb-beisbol,search
+LMB,Mexico,Norteamérica,2020,16,0,,,season cancelled (COVID-19),https://www.mediotiempo.com/beisbol/lmb/detiene-liga-mexicana-beisbol-mantiene-ritmo-ascendente-2024,yes
+LMB,Mexico,Norteamérica,2021,18,,1859668,,includes postseason; COVID-19 capacity limits,https://www.mediotiempo.com/beisbol/lmb/detiene-liga-mexicana-beisbol-mantiene-ritmo-ascendente-2024,yes
+LMB,Mexico,Norteamérica,2022,18,,4326636,,includes postseason,https://www.mediotiempo.com/beisbol/lmb/detiene-liga-mexicana-beisbol-mantiene-ritmo-ascendente-2024,yes
+LMB,Mexico,Norteamérica,2023,18,,4041303,,regular season; 4734831 incl. postseason (693528),https://www.mediotiempo.com/beisbol/lmb/detiene-liga-mexicana-beisbol-mantiene-ritmo-ascendente-2024,yes
+LMB,Mexico,Norteamérica,2024,20,930,4032870,4336,regular season; 4672669 incl. playoffs (561539) and Serie del Rey (78260); per-game computed,https://www.mediotiempo.com/beisbol/lmb/detiene-liga-mexicana-beisbol-mantiene-ritmo-ascendente-2024,yes
+LMB,Mexico,Norteamérica,2025,20,,,,no official season total found,https://es.wikipedia.org/wiki/Liga_Mexicana_de_Béisbol_2025,no
+LMB,Mexico,Norteamérica,2026,,,,,no official season total found,,no

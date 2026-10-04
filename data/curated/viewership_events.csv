@@ -1,0 +1,29 @@
+event,market,year,metric,value,unit,source_url,verified
+WBC final (Japan vs USA),Japan,2023,rating,42.4,percent,https://en.wikipedia.org/wiki/World_Baseball_Classic_television_ratings,yes
+WBC final (Japan vs USA),Japan,2023,avg_viewers,27.61,millions,https://en.wikipedia.org/wiki/World_Baseball_Classic_television_ratings,yes
+WBC 2023 (7 Japan games),Japan,2023,cumulative_viewers,94.462,millions,https://av.watch.impress.co.jp/docs/news/2096252.html,yes
+WBC final (Japan vs USA),United States,2023,avg_viewers,4.48,millions,https://www.mlb.com/news/2026-world-baseball-classic-final-viewership-numbers,yes
+WBC final (Japan vs USA) - FS1 + Fox Deportes + streaming,United States,2023,avg_viewers,5.4,millions,https://www.nbcsportsphiladelphia.com/mlb/world-baseball-classic-tv-ratings-2026/721884,yes
+WBC final (Venezuela vs USA) - FOX + Fox Deportes,United States,2026,avg_viewers,10.784,millions,https://www.mlb.com/news/2026-world-baseball-classic-final-viewership-numbers,yes
+WBC final (Venezuela vs USA) - FOX only,United States,2026,avg_viewers,10.228,millions,https://www.nbcsportsphiladelphia.com/mlb/world-baseball-classic-tv-ratings-2026/721884,yes
+WBC final (Venezuela vs USA),United States,2026,peak_viewers,12.148,millions,https://www.mlb.com/news/2026-world-baseball-classic-final-viewership-numbers,yes
+WBC 2026 tournament average (FOX/FS1/FS2),United States,2026,avg_viewers,1.294,millions,https://www.mlb.com/news/2026-world-baseball-classic-final-viewership-numbers,yes
+WBC final (Venezuela vs USA) - Netflix,Japan,2026,avg_viewers,,millions,https://av.watch.impress.co.jp/docs/news/2096252.html,no
+WBC 2026 all 47 games - Netflix,Japan,2026,cumulative_viewers,31.4,millions,https://av.watch.impress.co.jp/docs/news/2096252.html,yes
+WBC 2026 Japan vs Australia - Netflix,Japan,2026,cumulative_viewers,17.9,millions,https://av.watch.impress.co.jp/docs/news/2096252.html,yes
+WBC 2026 semifinal (Italy vs Venezuela),Italy,2026,avg_viewers,7,millions,https://en.wikipedia.org/wiki/World_Baseball_Classic_television_ratings,yes
+MLB Tokyo Series Game 1 (Dodgers vs Cubs),Japan,2025,avg_viewers,25,millions,https://www.foxsports.com/stories/mlb/dodgers-cubs-opener-tokyo-averages-more-than-25-million-viewers-japan-record-audience,yes
+MLB Tokyo Series Game 1 (Dodgers vs Cubs) - FOX,United States,2025,avg_viewers,0.838,millions,https://www.foxsports.com/stories/mlb/dodgers-cubs-opener-tokyo-averages-more-than-25-million-viewers-japan-record-audience,yes
+World Series 2025 (7-game average),United States,2025,avg_viewers,16.1,millions,https://www.mlb.com/news/world-series-game-7-viewership-is-best-since-1991,yes
+World Series 2025 (7-game average),Canada,2025,avg_viewers,8.1,millions,https://www.mlb.com/news/world-series-game-7-viewership-is-best-since-1991,yes
+World Series 2025 (7-game average),Japan,2025,avg_viewers,9.7,millions,https://www.mlb.com/news/world-series-game-7-viewership-is-best-since-1991,yes
+World Series 2025 (7-game average; US+Canada+Japan),Combined,2025,avg_viewers,34.0,millions,https://www.mlb.com/news/world-series-game-7-viewership-is-best-since-1991,yes
+World Series 2025 Game 7,United States,2025,avg_viewers,27.33,millions,https://www.foxsports.com/presspass/blog/2025/11/04/fox-sports-wraps-unforgettable-postseason-as-epic-world-series-game-7-delivers-27-3-million-viewers/,yes
+World Series 2025 Game 7,United States,2025,peak_viewers,33.064,millions,https://www.foxsports.com/presspass/blog/2025/11/04/fox-sports-wraps-unforgettable-postseason-as-epic-world-series-game-7-delivers-27-3-million-viewers/,yes
+World Series 2025 Game 7,Canada,2025,avg_viewers,11.6,millions,https://www.mlb.com/news/world-series-game-7-viewership-is-best-since-1991,yes
+World Series 2025 Game 7 (NHK-BS),Japan,2025,avg_viewers,12.0,millions,https://www.mlb.com/news/world-series-game-7-viewership-is-best-since-1991,yes
+World Series 2025 Game 6 (NHK-G),Japan,2025,avg_viewers,13.1,millions,https://www.mlb.com/news/world-series-game-7-viewership-is-best-since-1991,yes
+World Series 2025 Game 7 (US+Canada+Japan),Combined,2025,avg_viewers,51.0,millions,https://www.mlb.com/news/world-series-game-7-viewership-is-best-since-1991,yes
+World Series 2024 (5-game average),Japan,2024,avg_viewers,12.9,millions,https://www.foxsports.com/stories/mlb/ohtani-yamamoto-world-series-averaged-record-12-9m-viewers-japan,yes
+World Series 2024 (5-game average),United States,2024,avg_viewers,15.8,millions,https://www.foxsports.com/stories/mlb/ohtani-yamamoto-world-series-averaged-record-12-9m-viewers-japan,yes
+World Series 2024 Game 2,Japan,2024,avg_viewers,15.9,millions,https://www.foxsports.com/stories/mlb/ohtani-yamamoto-world-series-averaged-record-12-9m-viewers-japan,yes
