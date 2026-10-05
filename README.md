@@ -78,6 +78,8 @@ El build termina con revisiones de sentido común: unicidad, ~2.430 juegos por t
 Para publicarlo: en https://share.streamlit.io → *Create app* → repo `HectorGomezT/Data-Vis`, rama `main`,
 archivo `app/streamlit_app.py`, Python 3.12. Las dependencias del sitio están en `app/requirements.txt`.
 
+**Entregas de tareas:** la página "Entrega tu tarea" guarda en tu Google Drive + Sheets vía Apps Script; configúralo con [`docs/entregas_setup.md`](docs/entregas_setup.md).
+
 Sitio de storytelling en Streamlit (`app/`) con datos reales del béisbol internacional. Cada capítulo enseña una regla de
 dataviz con la misma gráfica en dos versiones, **❌ práctica común** y **✅ best practice**. La guía de la clase está en `docs/`.
 

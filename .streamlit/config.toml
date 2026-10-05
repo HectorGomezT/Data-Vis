@@ -8,6 +8,7 @@ font = "sans serif"
 
 [server]
 headless = true
+maxUploadSize = 10  # MB, igual que el límite de entregas
 
 [client]
 toolbarMode = "minimal"

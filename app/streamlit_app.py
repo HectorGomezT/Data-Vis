@@ -19,6 +19,7 @@ pages = {
         st.Page("views/post_marcador.py", title="El dashboard", icon=":material/dashboard:"),
     ],
     "Entradas extra": [st.Page(i.page, title=f"{i.num}.ª · {i.label}", icon=ball) for i in INNINGS if int(i.num) > 9],
+    "Tarea": [st.Page("views/tarea.py", title="Entrega tu tarea", icon=":material/upload_file:")],
 }
 nav = st.navigation(pages, expanded=True)
 
