@@ -50,3 +50,7 @@ Haz una entrega con cualquier imagen. Debe aparecer el archivo en la carpeta y u
 - **Instrucciones y fecha límite:** edita `INSTRUCCIONES` y `FECHA_LIMITE` al inicio de `app/views/tarea.py`.
 - **Cerrar las entregas:** borra los secrets en Streamlit Cloud, o cambia el `TOKEN` en el Apps Script.
 - **Si cambias el código del Apps Script:** Deploy → Manage deployments → editar → *New version*, para que la URL no cambie.
+- **"No pudimos guardar tu archivo":** casi siempre es falta de permiso para *escribir* en Drive. En el editor de Apps
+  Script, corre una función que cree un archivo (por ejemplo `DriveApp.getFolderById(...).createFile(...)`), acepta la
+  autorización y luego publica una **nueva versión** de la implementación. Las versiones publicadas antes de autorizar
+  siguen fallando.
