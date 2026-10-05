@@ -73,6 +73,11 @@ El build termina con revisiones de sentido común: unicidad, ~2.430 juegos por t
 
 # Béisbol sin fronteras · sitio de la clase de Data Visualization
 
+**Ver en línea:** _(link de Streamlit Community Cloud, pendiente de publicar)_
+
+Para publicarlo: en https://share.streamlit.io → *Create app* → repo `HectorGomezT/Data-Vis`, rama `main`,
+archivo `app/streamlit_app.py`, Python 3.12. Las dependencias del sitio están en `app/requirements.txt`.
+
 Sitio de storytelling en Streamlit (`app/`) con datos reales del béisbol internacional. Cada capítulo enseña una regla de
 dataviz con la misma gráfica en dos versiones, **❌ práctica común** y **✅ best practice**. La guía de la clase está en `docs/`.
 
