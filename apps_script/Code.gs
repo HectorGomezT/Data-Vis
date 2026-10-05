@@ -9,6 +9,7 @@
  *
  * Despliega como "Web app" → Execute as: Me · Who has access: Anyone.
  * Instrucciones completas: docs/entregas_setup.md
+ * Versión del receptor: 2 (muestra el detalle del error)
  */
 
 const TIPOS_OK = ['image/png', 'image/jpeg', 'application/pdf'];
@@ -55,7 +56,8 @@ function doPost(e) {
 
     return responder({ ok: true, hora: Utilities.formatDate(ahora, ZONA, 'HH:mm') });
   } catch (err) {
-    return responder({ ok: false, error: 'No pudimos guardar tu archivo. Avísale a tu profesor.' });
+    console.error(err);  // visible en "Ejecuciones" del editor de Apps Script
+    return responder({ ok: false, error: 'No pudimos guardar tu archivo (' + err + '). Avísale a tu profesor.' });
   } finally {
     lock.releaseLock();
   }
